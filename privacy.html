@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/favicon.ico" />
+    <title>Privacy policy - Getplace.io</title>
+    <meta name="description" content="Getplace.io is committed to protecting your privacy. Read our privacy policy to learn how we collect, use, and protect your personal information."/>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./styles/errors.css" />
+    <link rel="stylesheet" href="./styles/js-snackbar.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+            href="https://fonts.googleapis.com/css2?family=Krona+One&family=Open+Sans:wght@400;700&display=swap"
+            rel="stylesheet"
+    />
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8V22ZKDGG9"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-8V22ZKDGG9');
+    </script>
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-T6C3HGX');</script>
+    <!-- End Google Tag Manager -->
+    <link href="https://getplace.io/privacy.html" rel="canonical">
+
+    <!-- Meta Pixel Code -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+            n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t,s)}(window, document,'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '353252573798331');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+                   src="https://www.facebook.com/tr?id=353252573798331&ev=PageView&noscript=1"
+    /></noscript>
+
+</head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T6C3HGX"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <div id="gitBg"></div>
+    <div id="getInTouchWrapper">
+      <div id="gitClose">
+        <span id="gitCloseOne"></span>
+        <span></span>
+      </div>
+      <p class="paragraph gap" class="h2">Get in touch</p>
+      <p class="paragraph gap" class="paragraph gap" id="gitText">
+        Feel free to share your contact details and we will get back to you.
+      </p>
+      
+      <p class="paragraph gap" class="serviceText" id="gitFormTitle">Enter contacts where to reach you:</p>
+      <form action="" id="gitForm">
+        
+        <input
+                class="gitInput serviceText"
+                type="text"  id="first_name"
+                placeholder="First Name" 
+        />
+        <input
+                class="gitInput serviceText"
+                type="text" id="last_name"
+                placeholder="Last Name"
+        />
+        <input
+                class="gitInput serviceText"
+                type="text" id="company"
+                placeholder="Company name"
+        />
+        <input
+                class="gitInput serviceText"
+                type="email" id="email"
+                placeholder="Business E-mail"
+        />
+        <p class="paragraph gap" class="supServiceText" id="gitUnderSubmitText">
+          By submitting, I accept the getplace.io <a href="/privacy.html" target="_blank">Privacy Policy</a>.
+        </p>
+        <input class="mainBtn" id="gitSubmitBtn" type="button" value="Submit" onclick="sendContact()" />
+      </form>
+      <div class="form-form-group sent" id="contact-form-sent">
+        Message sent. We will contact you shortly.
+      </div>
+    
+      <p class="paragraph gap" id="gitMoreWays" class="paragraph gap">More ways to contact us:</p>
+      <div>
+        <div id="gitIcons">
+          <a href="mailto:info@getplace.io" rel="nofollow"><img src="./media/messageIconDark.svg" alt="message icon" rel="nofollow" /></a>
+          <a href="https://www.linkedin.com/company/getplace-io/" target="_blank" rel="nofollow"><img src="./media/linkedinIconDark.svg" alt="linkedIn icon" /></a>
+        </div>
+      </div>
+    </div>
+
+    <!--div id="getReportWrapper">
+        <div id="gitClose">
+          <span id="gitCloseOne"></span>
+          <span></span>
+        </div>
+        <p class="h2">Explore example</p>
+        <p class="paragraph" id="gitText">
+          Get to know how our reports look and work through an example for an address in London
+        </p>
+        
+        <form action="" id="gitFormRep">
+          <input
+                  class="gitInput serviceText"
+                  type="text" id="full_name_contact"
+                  placeholder="Full Name" 
+          />
+          <input
+                  class="gitInput serviceText"
+                  type="email_contact" id="email_contact"
+                  placeholder="Business E-mail"
+          />
+          <p class="supServiceText" id="gitUnderSubmitText">
+            By submitting, I accept the getplace.io <a href="/privacy.html" target="_blank">Privacy Policy</a>.
+          </p>
+          <input class="mainBtn" id="gitReportBtn" type="button" value="Go to report" onclick="sendReport()" />
+        </form>
+    </div-->
+      
+
+<nav>
+    <div id="navLeft">
+        <a href="https://getplace.io" id="navLogo" class="descriptionBold">getplace.io</a>
+        <div id="navLinks" class="paragraph gap">
+            <a class="navLink" href="/#useCases">Use Cases</a>
+            <a class="navLink" href="/#reportData">Report Data</a>
+        </div>
+    </div>
+    <div id="navRight">
+        <a href="https://app.getplace.io/location-report/cWX9Ln" class="secButton exploreTop" target="_blank" rel="nofollow">Explore free example online</a>
+        <!--button class="secButton" id="getReport">Explore free example online</button-->
+        <a class="secButton exploreTop" id="getInTouch" href="https://calendly.com/denis_getplace" target="_blank" rel="nofollow">Get in Touch</a>
+        <div class="burgerMenu" id="burgerMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+    <div class="mobileMenu" id="mobileMenu">
+        <p class="paragraph gap" class="serviceText">Menu:</p>
+        <a class="paragraph gap" href="#useCases">Use Cases</a>
+        <a class="paragraph gap" href="#reportData">Report Data</a>
+        <div id="mobileMenuButtons">
+            <button class="mainBtn">Get personal report for £15</button>
+            <a class="secButton" id="getReport" href="https://app.getplace.io/location-report/cWX9Ln" rel="nofollow">Explore free example online</a>
+            <a class="secButton" id="getInTouch" href="https://calendly.com/denis_getplace" target="_blank" rel="nofollow">Get in Touch</a>
+
+        </div>
+        <div id="menuIcons">
+            <a href="mailto:info@getplace.io" rel="nofollow"><img src="./media/messageIconDark.svg" alt="message icon" rel="nofollow"/></a>
+            <a><img src="./media/whatsappIconDark.svg" alt="whatsApp icon" /></a>
+            <a><img src="./media/phoneIconDark.svg" alt="phone icon" /></a>
+            <a href="https://www.linkedin.com/company/getplace-io/" target="_blank" rel="nofollow"><img src="./media/linkedinIconDark.svg" alt="linkedIn icon" /></a>
+        </div>
+    </div>
+</nav>
+
+
+<section class="policy" id="policy">
+    <div>
+        <br />
+        <h1 class="h1">Privacy policy</h1>
+        <br />
+        
+        <img id="bgMapPolicy" src="./media/Map right.png" />
+        
+        <h4 class="h2 subtitle" style="padding-bottom: 5px;">Our contact details</h4>
+        <p class="paragraph gap">Name: Denis Chernobaev</p>
+        <p class="paragraph gap">E-mail: <a href="mailto:info@getplace.io" rel="nofollow"><u>info@getplace.io</u></a></p>
+
+        <br />
+        <h4 class="h2 subtitle" style="padding-bottom: 5px;">The type of personal information we collect</h4>
+        <p class="paragraph gap">We currently collect and process the following information:</p>
+        <ul class="paragraph gap">
+            <li> Personal identifiers, contacts and characteristics (full name and contact details)</li>
+            <li> Addresses of potential locations you provide</li>
+            <li> Website analytics data</li>
+        </ul>
+
+        <br />
+        <h4 class="h2 subtitle" style="padding-bottom: 5px;">How we get the personal information and why we have it</h4>
+        <p class="paragraph gap">Most of the personal information we process is provided to us directly by you for one of the following reasons:</p>
+        <ul class="paragraph gap">
+            <li> To create a report with the location you have provided</li>
+            <li> To share the purchased result with you</li>
+            <li> To contact you to ask for feedback on our product</li>
+        </ul>
+        <br />
+        <p class="paragraph gap">We use the information that you have given us in order to provide services to you, and to be able to contact you.</p>
+        <br />
+        <p class="paragraph gap">Under the UK General Data Protection Regulation (UK GDPR), the lawful bases we rely on for processing this information are:</p>
+        <br />
+        <p class="paragraph gap"><b>(a) Your consent. You are able to remove your consent at any time. You can do this by contacting <a href="mailto:info@getplace.io" rel="nofollow"><u>info@getplace.io</u></a></b></p>
+        <p class="paragraph gap"><b>(f) We have a legitimate interest.</b></p>
+
+
+        <br />
+        <h4 class="h2 subtitle" style="padding-bottom: 5px;">How we store your personal information </h4>
+        <p class="paragraph gap">Your information is securely stored.</p>
+        <p class="paragraph gap">We keep Personal identifiers, contacts and characteristics for 2 years. We will then dispose your information by deleting it from our data base.</p>
+        <p class="paragraph gap">We keep addresses of potential locations you provide for 2 years. We will then dispose your information by deleting it from our data base.</p>
+        <p class="paragraph gap">We keep website analytics data for 2 years. We will then dispose your information by deleting it from our data base.</p>
+
+        <br />
+        <h4 class="h2 subtitle" style="padding-bottom: 5px;">Your data protection rights</h4>
+        <p class="paragraph gap">Under data protection law, you have rights including:</p>
+        <p class="paragraph gap"><b>Your right of access</b> - You have the right to ask us for copies of your personal information. </p>
+        <p class="paragraph gap"><b>Your right to rectification</b> - You have the right to ask us to rectify personal information you think is inaccurate. You also have the right to ask us to complete information you think is incomplete.</p>
+        <p class="paragraph gap"><b>Your right to erasure</b> - You have the right to ask us to erase your personal information in certain circumstances.</p>
+        <p class="paragraph gap"><b>Your right to restriction of processing</b> - You have the right to ask us to restrict the processing of your personal information in certain circumstances.</p>
+        <p class="paragraph gap"><b>Your right to object to processing</b> - You have the the right to object to the processing of your personal information in certain circumstances.</p>
+        <p class="paragraph gap"><b>Your right to data portability</b> - You have the right to ask that we transfer the personal information you gave us to another organisation, or to you, in certain circumstances.</p>
+        <br />
+        <p class="paragraph gap">You are not required to pay any charge for exercising your rights. If you make a request, we have one month to respond to you.</p>
+        <br />
+        <p class="paragraph gap">Please contact us at <a href="mailto:info@getplace.io" rel="nofollow"><u>info@getplace.io</u></a>,if you wish to make a request.</p>
+
+
+        <br />
+        <h4 class="h2 subtitle" style="padding-bottom: 5px;">How to complain</h4>
+        <p class="paragraph gap">If you have any concerns about our use of your personal information, you can make a complaint to us at <a href="mailto:info@getplace.io" rel="nofollow"><u>info@getplace.io</u></a>.</p>
+        <p class="paragraph gap">You can also complain to the ICO if you are unhappy with how we have used your data.</p>
+        <br />
+        <p class="paragraph gap">The ICO’s address:</p>
+        <p class="paragraph gap">Information Commissioner’s Office</p>
+        <p class="paragraph gap">Wycliffe House</p>
+        <p class="paragraph gap">Water Lane</p>
+        <p class="paragraph gap">Wilmslow</p>
+        <p class="paragraph gap">Cheshire</p>
+        <p class="paragraph gap">SK9 5AF</p>
+        <br />
+        <p class="paragraph gap">Helpline number: 0303 123 1113</p>
+        <p class="paragraph gap">ICO website: <a href="https://www.ico.org.uk" target="_blank" rel="nofollow">https://www.ico.org.uk</a</p>
+        <br /><br />
+    </div>
+</section>
+
+<footer id="footer" class="grid">
+    <a href="" id="footerLogo" class="descriptionBold">getplace.io</a>
+    <div id="footerLinks" class="paragraph gap">
+        <a class="footerLink" href="#useCases">Use Cases</a>
+        <a class="footerLink" href="#reportData">Report Data</a>
+    </div>
+    <div id="footerIcons">
+        <a><img src="./media/messageIcon.svg" alt="Email Message Icon" /></a>
+        <a href="https://www.linkedin.com/company/getplace-io/" target="_blank" rel="nofollow"><img src="./media/linkedinIcon.svg" alt="LinkedIn Icon" /></a>
+    </div>
+    <div class="h2" id="footerText">
+        We measure the offline world to help businesses make right strategic
+        decisions.
+    </div>
+    <div id="gdprWrapper">
+        <img src="./media/GDPR.png" alt="GDPR Compliance Badge" id="gdpr" />
+    </div>
+    <div id="footerBottom" class="supServiceText">
+        <a class="footerBottomLink" href="mailto:info@getplace.io" rel="nofollow">info@getplace.io</a>
+        <a class="footerBottomLink" href="/sources.html">Data Sources</a>
+        <a class="footerBottomLink" href="/privacy.html">Privacy Policy</a>
+        <!--a class="footerBottomLink" href="">Public Offer</a-->
+        <p class="footerBottomLink">© 2023</p>
+    </div>
+</footer>
+
+<script src="https://unpkg.com/h3-js"></script>
+  <script src="js-snackbar.min.js"></script>
+  <script src="errors.js"></script>
+<script src="./privacy.js?0.12"></script>
+</body>
+</html>

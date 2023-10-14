@@ -1,0 +1,178 @@
+#blogImage {
+  height: 50vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  position: fixed;
+  top: 100px;
+  left: 0;
+  z-index: -1;
+}
+
+#header {
+  margin: 0 auto;
+  position: relative;
+  margin-top: 30vh;
+  text-align: center;
+  min-height: 500px;
+  background-image: url("../mediaBlog/headerBg.png");
+  background-size: auto 150%;
+  background-position: center -50px;
+  display: flex;
+  align-items: baseline;
+  padding-top: 100px;
+}
+#titleDescription {
+  padding-top: 200px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  position: unset;
+  margin-top: auto;
+  width: 80vw;
+  margin: auto;
+}
+#title {
+  background: rgba(255, 255, 255, 0.7);
+}
+
+#headerLine {
+  height: 3px;
+  width: 100px;
+  background-color: #2c2c2c;
+}
+#description {
+}
+#headerBg {
+  margin-left: -25%;
+  width: auto;
+  height: 100%;
+  pointer-events: none;
+  display: none;
+}
+#autorDate {
+  display: flex;
+  justify-content: right;
+  flex-direction: column;
+  width: fit-content;
+  margin: 0 auto;
+  align-items: self-end;
+  margin-top: 100px;
+}
+#autorWrapper {
+  display: flex;
+  gap: 10px;
+  cursor: pointer;
+  align-items: center;
+}
+#article {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+  margin-top: 50px;
+  width: 80vw;
+}
+.date {
+  opacity: 0.8;
+  text-align: right;
+  font-size: 12px;
+}
+.hexagon {
+  box-shadow: 0px 0px 20px rgba(57, 53, 216, 0.2);
+  width: 50px;
+  height: 50px;
+  background-image: url("../mediaBlog/Denis.jpg");
+  background-size: cover;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+#article h2 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  font-weight: 600;
+  font-size: 26px;
+}
+#article p {
+  margin: 10px 0;
+}
+#article img {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 0 20px;
+  height: auto;
+  max-width: 750px !important;
+}
+#article a {
+  color: #3935d8;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 515px) {
+}
+@media screen and (min-width: 860px) {
+  #blogImage {
+    height: 60vh;
+  }
+
+  #header {
+    margin: 0 auto;
+    position: relative;
+    margin-top: 40vh;
+    background: none;
+    display: block;
+    align-items: unset;
+    padding: 0;
+    margin-bottom: -300px;
+  }
+  #titleDescription {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: baseline;
+    position: relative;
+    /* top: 0; */
+    bottom: 400px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background-color: unset;
+    width: 70%;
+    max-width: 700px;
+    padding: 0;
+  }
+  #headerBg {
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    max-width: 1000px;
+    display: block;
+  }
+  #title {
+    background: none;
+  }
+
+  #description {
+  }
+  #autorDate {
+    margin-top: 0px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  #titleDescription {
+    /* top: 45%;
+    top: 500px; */
+  }
+}
+@media screen and (min-width: 1600px) {
+  #titleDescription {
+    /* top: 41%;
+    top: 500px; */
+  }
+}

@@ -1,0 +1,21 @@
+.clientsSwiper {
+  width: 100%;
+}
+.clientsSwiper .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 88px;
+}
+
+.client-logo {
+  filter: invert(45%) sepia(95%) saturate(290%) hue-rotate(202deg)
+    brightness(109%) contrast(103%);
+  transition: 0.2s;
+
+  pointer-events: all;
+}
+.client-logo:hover {
+  filter: none;
+}

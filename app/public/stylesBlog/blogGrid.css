@@ -1,0 +1,84 @@
+#blogsGrid {
+  margin-bottom: 100px;
+  max-width: 1440px;
+}
+#blogGridTitle {
+  grid-column: 1/-1;
+  color: #2c2c2c;
+}
+.blogWrapper {
+  grid-column: auto;
+  border-radius: 50px;
+  box-shadow: 0px 0px 20px rgba(57, 53, 216, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 30px;
+  color: #2c2c2c;
+  cursor: pointer;
+  transition: 0.2s ease-in;
+}
+.blogWrapper:hover {
+  scale: 1.03;
+}
+.blogWrapper:active {
+  scale: 1;
+}
+.blogGridImage {
+  background: linear-gradient(180deg, #2c2c2c 0%, rgba(44, 44, 44, 0) 44.79%);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+  min-height: 200px;
+  border-radius: 20px;
+  margin-top: 50px;
+}
+.blogGridName {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 35px;
+}
+.blogGridDescription {
+}
+/* .blogButtonAndDate {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 30px;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+} */
+.blogDate {
+  text-align: right;
+  margin-left: auto;
+}
+
+.scrollbar {
+  display: none;
+}
+
+.scrollbar {
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  height: 5px;
+  width: 100vw;
+}
+.scrollball {
+  width: 10px;
+  height: 5px;
+
+  left: 0px;
+  position: absolute;
+  background: #3935d8;
+}
+
+@media screen and (min-width: 1280px) {
+  .blogWrapper {
+    grid-column: auto;
+  }
+}

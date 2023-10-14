@@ -1,0 +1,1027 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Households Density Heat Map</title>
+    <meta
+      name="description"
+      content="Visualize the density of households in your area with our interactive Heat Map. Discover areas with high concentrations of residential properties, enabling you to gain valuable insights into population distribution and demographics."
+    />
+    <style data-styles="">
+      cookie-consent-banner {
+        visibility: hidden;
+      }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Krona+One&family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="./styles/heatmap_pages/global.css"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="./styles/errors.css?0.1" type="text/css" />
+    <link rel="stylesheet" href="./styles/js-snackbar.min.css" />
+    <link rel="stylesheet" href="./styles/home/pricing.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/@porscheofficial/cookie-consent-banner@2.1.0/dist/cookie-consent-banner/cookie-consent-banner.esm.js"
+    ></script>
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-8V22ZKDGG9"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-8V22ZKDGG9");
+    </script>
+
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-T6C3HGX");
+    </script>
+    <!-- End Google Tag Manager -->
+    <script src="https://www.googleoptimize.com/optimize.js?id=OPT-T9FKZ2M"></script>
+    <link href="https://getplace.io/heatmap_households" rel="canonical">
+
+    <!-- Meta Pixel Code -->
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+              n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+              'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '353252573798331');
+      fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+                   src="https://www.facebook.com/tr?id=353252573798331&ev=PageView&noscript=1"
+    /></noscript>
+
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-T6C3HGX"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <!-- DEMO POPUP -->
+
+    <!-- <div id="demoPopUpBg">
+  <div id="demoPopUp">
+    <div id="demoPopUpClose">
+      <img src="./media/close.svg" alt="close icon" />
+    </div>
+    <div id="demoPopUpContent">
+      <h3 id="demoPopUpTitle">Request a Demo</h3>
+      <p id="demoPopUpText">
+        Feel free to share your contact details for us to show you the
+        capabilities of the Footfall Heat Map
+      </p>
+
+      <form id="demoPopUpForm">
+        <p id="demoPopUpFormText">Enter contacts where to reach you:</p>
+
+        <input
+          type="text"
+          name="fName"
+          id="fName"
+          placeholder="Full Name"
+        />
+        <input
+          type="text"
+          name="cName"
+          id="cName"
+          placeholder="Company name"
+        />
+        <input
+          type="email"
+          name="bEmail"
+          id="bEmail"
+          placeholder="Business E-mail"
+        />
+
+        <p id="demoPopUpBottomText">
+          By proceeding, I accept the getplace.io
+          <a href="/privacy.html" target="_blank">Privacy Policy.</a>
+        </p>
+        <input
+          type="button"
+          class="blue-button"
+          value="Submit"
+          id="contactSubmit"
+          onclick="sendContact();"
+        />
+      </form>
+
+      <div id="demoPopUpSent">
+        Message sent. We will contact you shortly.
+      </div>
+
+      <div id="demoPopUpContact">
+        More ways to contact us:
+        <div id="demoPopUpIcons">
+          <a href="mailto:info@getplace.io"
+            ><img src="./media/messageIconDark.svg" alt="message icon"
+          /></a>
+          <a
+            href="https://www.linkedin.com/company/getplace-io/"
+            target="_blank"
+            ><img src="./media/linkedinIconDark.svg" alt="linkedIn icon"
+          /></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> -->
+    <div class="wrapper" id="full-sub-section">
+      <main class="page">
+        <section class="confirm">
+          <div class="confirm__main">
+            <div class="confirm__container">
+              <div class="confirm__header">
+                <a href="https://getplace.io/">
+                  <img
+                    src="img/logo-blue.svg"
+                    alt="GetPlace"
+                    class="confirm__logo"
+                  />
+                </a>
+                <div class="confirm__secure">
+                  Secure payment w/
+                  <img src="img/stripe-logo.svg" alt="stripe logo" />
+                </div>
+              </div>
+              <form action="" class="confirm__form">
+                <a
+                  href="report.html#pricing"
+                  class="confirm__form-back-button _icon-chevron-left"
+                  >Back</a
+                >
+                <span class="confirm__form-title h1">FULL ACCESS FOR:</span>
+
+                <div id="full-sub-section-errs" class="error-form"></div>
+
+                <label class="confirm__form-label" for="name">Full Name</label>
+                <input
+                  class="confirm__form-input hero__input"
+                  type="text"
+                  name="name"
+                  id="full-sub-section-name"
+                />
+                <label class="confirm__form-label" for="email"
+                  >Business E-mail</label
+                >
+                <input
+                  class="confirm__form-input hero__input"
+                  type="email"
+                  name="email"
+                  id="full-sub-section-email"
+                />
+                <label class="confirm__form-label" for="email"
+                  >Account Password</label
+                >
+                <input
+                  class="confirm__form-input hero__input"
+                  type="password"
+                  name="password"
+                  id="full-sub-section-password"
+                />
+                <button type="submit" class="confirm__form-button button-main">
+                  Full access for £99
+                </button>
+                <div class="confirm__form-desc">
+                  By proceeding, I accept the getplace.io
+                  <a href="https://getplace.io/privacy.html">Privacy Policy</a>.
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="confirm__sidebar">
+            <div class="confirm__sidebar-wrap">
+              <div class="confirm__sidebar-top">
+                <span class="confirm__sidebar-title h2">
+                  What is included in the subscription
+                </span>
+                <ul class="confirm__sidebar-list">
+                  <li class="_icon-checkmark">
+                    Unlimited insights reports for any UK location
+                  </li>
+                  <li class="_icon-checkmark">
+                    Dedicated Getplace expert advisory
+                  </li>
+                  <li class="_icon-checkmark">Getplace PricePulse</li>
+                  <li class="_icon-checkmark">Getplace Heat Maps</li>
+                </ul>
+                <div class="confirm__sidebar-desc">
+                  Money-back guarantee if you are not satisfied with the
+                  subscription.
+                </div>
+              </div>
+              <div class="confirm__sidebar-bottom">
+                <div class="confirm__sidebar-testimonial">
+                  It’s very useful to have Getplace tools by my side. I much
+                  prefer to see facts and figures and act on them before anybody
+                  else does.
+                </div>
+                <div class="confirm__sidebar-autor">
+                  <picture
+                    ><source
+                      srcset="img/graham-atkinson.webp"
+                      type="image/webp" />
+                    <img
+                      src="img/graham-atkinson.png"
+                      alt="Graham Atkinson photo"
+                      class="confirm__sidebar-autor-photo"
+                  /></picture>
+                  <div class="confirm__sidebar-autor-text">
+                    <div class="confirm__sidebar-autor-name">
+                      Graham Atkinson
+                    </div>
+                    <div class="confirm__sidebar-autor-job">
+                      Owner / Director
+                    </div>
+                    <div class="confirm__sidebar-autor-business">
+                      Homies Pizza and Butta Burger
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <div class="wrapper" id="unlimited-reports-section">
+      <main class="page">
+        <section class="confirm">
+          <div class="confirm__main">
+            <div class="confirm__container">
+              <div class="confirm__header">
+                <a href="https://getplace.io/">
+                  <img
+                    src="img/logo-blue.svg"
+                    alt="GetPlace"
+                    class="confirm__logo"
+                  />
+                </a>
+                <div class="confirm__secure">
+                  Secure payment w/
+                  <img src="img/stripe-logo.svg" alt="stripe logo" />
+                </div>
+              </div>
+              <form action="" class="confirm__form">
+                <a
+                  href="report.html#pricing"
+                  class="confirm__form-back-button _icon-chevron-left"
+                  >Back</a
+                >
+                <span class="confirm__form-title h1"
+                  >UNLIMITED REPORTS FOR:</span
+                >
+
+                <div
+                  id="unlimited-reports-section-errs"
+                  class="error-form"
+                ></div>
+
+                <label class="confirm__form-label" for="name">Full Name</label>
+                <input
+                  class="confirm__form-input hero__input"
+                  type="text"
+                  name="name"
+                  id="unlimited-reports-section-name"
+                />
+                <label class="confirm__form-label" for="email"
+                  >Business E-mail</label
+                >
+                <input
+                  class="confirm__form-input hero__input"
+                  type="email"
+                  name="email"
+                  id="unlimited-reports-section-email"
+                />
+                <label class="confirm__form-label" for="email"
+                  >Account Password</label
+                >
+                <input
+                  class="confirm__form-input hero__input"
+                  type="password"
+                  name="password"
+                  id="unlimited-reports-section-password"
+                />
+                <button type="submit" class="confirm__form-button button-main">
+                  Unlimited reports for £69
+                </button>
+                <div class="confirm__form-desc">
+                  By proceeding, I accept the getplace.io
+                  <a href="https://getplace.io/privacy.html">Privacy Policy</a>.
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="confirm__sidebar">
+            <div class="confirm__sidebar-wrap">
+              <div class="confirm__sidebar-top">
+                <span class="confirm__sidebar-title h2">
+                  What is included in the subscription
+                </span>
+                <ul class="confirm__sidebar-list">
+                  <li class="_icon-checkmark">Unlimited insights reports</li>
+                  <li class="_icon-checkmark">For any UK location</li>
+                  <li class="_icon-checkmark">
+                    Dedicated Getplace expert advisory
+                  </li>
+                </ul>
+                <div class="confirm__sidebar-desc">
+                  Money-back guarantee if you are not satisfied with the
+                  subscription.
+                </div>
+              </div>
+              <div class="confirm__sidebar-bottom">
+                <div class="confirm__sidebar-testimonial">
+                  It’s very useful to have Getplace tools by my side. I much
+                  prefer to see facts and figures and act on them before anybody
+                  else does.
+                </div>
+                <div class="confirm__sidebar-autor">
+                  <picture
+                    ><source
+                      srcset="img/graham-atkinson.webp"
+                      type="image/webp" />
+                    <img
+                      src="img/graham-atkinson.png"
+                      alt="Graham Atkinson photo"
+                      class="confirm__sidebar-autor-photo"
+                  /></picture>
+                  <div class="confirm__sidebar-autor-text">
+                    <div class="confirm__sidebar-autor-name">
+                      Graham Atkinson
+                    </div>
+                    <div class="confirm__sidebar-autor-job">
+                      Owner / Director
+                    </div>
+                    <div class="confirm__sidebar-autor-business">
+                      Homies Pizza and Butta Burger
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <div class="popup-bg" id="demoPopUpBg">
+      <div class="popup-wrapper" id="demoPopUp">
+        <div class="popup-close" id="demoPopUpClose">
+          <img src="./mediaMain/close.svg" alt="close icon" />
+        </div>
+        <div class="popup-text">
+          <h3>Request a Demo</h3>
+          <p id="demoPopUpText">
+            Enter your details and we will contact you shortly
+          </p>
+        </div>
+        <form class="popup-form" id="demoPopUpForm">
+          <div id="sform-err" class="error-form"></div>
+          <label for="fName">Full Name</label>
+          <input
+            type="text"
+            name="fName"
+            id="fName"
+            placeholder="David Smith"
+          />
+
+          <label for="bEmail">Business email</label>
+          <input
+            type="email"
+            name="bEmail"
+            id="bEmail"
+            placeholder="email@restaurant.com"
+          />
+
+          <label for="comment">Comment</label>
+          <textarea
+            name="comment"
+            id="comment"
+            rows="4"
+            placeholder="Any details for us to know in advance"
+          ></textarea>
+
+          <input
+            type="submit"
+            value="Submit"
+            id="contactSubmit"
+            class="blue-button submit-button"
+          />
+          <p>
+            By proceeding, I accept the getplace.io
+            <a href="/privacy.html" target="_blank">Privacy Policy</a>.
+          </p>
+        </form>
+        <div id="demoPopUpSent">Message sent. We will contact you shortly.</div>
+        <div class="popup-contact">
+          More ways to contact us:
+          <div class="popup-icons">
+            <a href="mailto:info@getplace.io"
+              ><img src="./mediaMain/messageIconDark.svg" alt="message icon"
+            /></a>
+            <a
+              href="https://www.linkedin.com/company/getplace-io/"
+              target="_blank"
+              ><img src="./mediaMain/linkedinIconDark.svg" alt="linkedIn icon"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!---- POPUP ----->
+    <!-- <div id="popUpBg">
+  <div id="popUp">
+    <div id="popUpClose">
+      <img src="./media/close.svg" alt="close icon" />
+    </div>
+    <div id="popUpContent">
+      <p id="popUpText">
+        Few clicks away from accessing the Footfall Heat Map and unlimited
+        Location Reports
+      </p>
+      <div id="sendform-err" class="error-form"></div>
+      <form id="popUpForm">
+        <label for="fName">Full Name</label>
+        <input
+          type="text"
+          name="fName"
+          id="_fName"
+          placeholder="David Smith"
+        />
+        <label for="cName">Company name</label>
+        <input
+          type="text"
+          name="cName"
+          id="_cName"
+          placeholder="Burger Hero"
+        />
+        <label for="bEmail">Business E-mail</label>
+        <input
+          type="email"
+          name="bEmail"
+          id="_bEmail"
+          placeholder="email@restaurant.com"
+        />
+        <label for="password">Account Password</label>
+        <input
+          type="password"
+          name="password"
+          id="_password"
+          placeholder="At least 6 characters"
+        />
+        <input
+          type="submit"
+          class="blue-button"
+          value=""
+          id="popUpSubmit"
+        />
+      </form>
+      <p id="popUpBottomText">
+        By proceeding, I accept the getplace.io
+        <a href="/privacy.html" class="bottomText" target="_blank"
+          >Privacy Policy</a
+        >.
+      </p>
+    </div>
+  </div>
+</div> -->
+
+    <div class="popup-bg" id="popUpBg">
+      <div class="popup-wrapper" id="popUp">
+        <div class="popup-close" id="popUpClose">
+          <img src="./mediaMain/close.svg" alt="close icon" />
+        </div>
+        <div class="popup-text">
+          <h3>Few clicks away from accessing the Footfall Heat Map</h3>
+          <p id="popUpText"></p>
+        </div>
+        <div id="sfb" class="error-form"></div>
+        <form class="popup-form" id="popUpForm">
+          <label for="fName">Full Name</label>
+          <input
+            type="text"
+            name="fName"
+            id="_fName"
+            placeholder="David Smith"
+          />
+          <label for="cName">Company name</label>
+          <input
+            type="text"
+            name="cName"
+            id="_cName"
+            placeholder="Burger Hero"
+          />
+          <label for="bEmail">Business E-mail</label>
+          <input
+            type="email"
+            name="bEmail"
+            id="_bEmail"
+            placeholder="email@restaurant.com"
+          />
+          <label for="password">Account Password</label>
+          <input
+            type="password"
+            name="password"
+            id="_password"
+            placeholder="At least 6 characters"
+          />
+          <input
+            type="submit"
+            class="blue-button submit-button"
+            value=""
+            id="popUpSubmit"
+          />
+
+          <p>
+            By proceeding, I accept the getplace.io
+            <a href="/privacy.html" target="_blank">Privacy Policy</a>.
+          </p>
+        </form>
+      </div>
+    </div>
+
+    <nav class="nav">
+      <div class="navLeft">
+        <div class="nav-logo-wrapper">
+          <a class="navLogo" href="/">getplace.io</a>
+        </div>
+        <div class="navLinks">
+          <ul class="nav-desctop">
+            <li>
+              <a href="/"><p>Home</p></a>
+              <ul class="hover-list">
+                <li><a href="/#reviews">Reviews</a></li>
+                <li><a href="/#adv">Advantages</a></li>
+                <li><a href="/#start">How to Start</a></li>
+                <li><a href="/#pricing">Pricing</a></li>
+                <li><a href="/#features">Features</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="/report"><p>Location Reports</p></a>
+              <ul class="hover-list">
+                <li><a href="/report#useCases">How to Use</a></li>
+                <li><a href="/report#pricing">Pricing</a></li>
+                <li><a href="/report#reportData">Report Data</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="/heatmap"><p>Heat Maps</p></a>
+              <ul class="hover-list">
+                <li><a href="#hero">Households</a></li>
+                <li><a href="/heatmap_fb">F&B Businesses</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="navRight">
+        <a
+          href="https://calendly.com/denis_getplace"
+          class="white-button bold"
+          target="_blank"
+        >
+          Request a Demo
+        </a>
+        <a
+          class="white-button navLog"
+          href="https://app.getplace.io/login"
+          rel="nofollow"
+        >
+          Log In
+        </a>
+        <div class="burgerMenu" id="burgerMenu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <div class="mobileMenu" id="mobileMenu">
+        <p class="mobileMenuText">Menu:</p>
+        <ul>
+          <li class="mobile-li">
+            <p>Home <img src="./mediaMain/v.svg" alt="Transparent Point" /></p>
+            <ul>
+              <li><a href="/#reviews">Reviews</a></li>
+              <li><a href="/#adv">Advantages</a></li>
+              <li><a href="/#start">How to Start</a></li>
+              <li><a href="/#pricing">Pricing</a></li>
+              <li><a href="/#features">Features</a></li>
+            </ul>
+          </li>
+          <li class="mobile-li">
+            <p>
+              Location Reports
+              <img src="./mediaMain/v.svg" alt="Transparent Point" />
+            </p>
+            <ul>
+              <li><a href="/report#useCases">How to Use</a></li>
+              <li><a href="/report#pricing">Pricing</a></li>
+              <li><a href="/report#reportData">Report Data</a></li>
+            </ul>
+          </li>
+          <li class="mobile-li">
+            <p>
+              Heat Maps <img src="./mediaMain/v.svg" alt="Transparent Point" />
+            </p>
+            <ul>
+              <li><a href="/heatmap">Heat map</a></li>
+              <li><a href="#hero">Households</a></li>
+              <li><a href="/heatmap_fb">F&B Businesses</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <div class="mobileMenuButtons">
+          <a
+            class="white-button bold requestDemoButton"
+            href="https://calendly.com/denis_getplace"
+            target="_blank"
+          >
+            Request a Demo
+          </a>
+          <a
+            class="white-button mobile-login"
+            href="https://app.getplace.io/login"
+            rel="nofollow"
+            >Log In</a
+          >
+        </div>
+        <div class="menuIcons">
+          <a href="mailto:info@getplace.io"
+            ><img src="./mediaMain/messageIconDark.svg" alt="email icon"
+          /></a>
+          <a
+            href="https://www.linkedin.com/company/getplace-io/"
+            target="_blank"
+            ><img src="./mediaMain/linkedinIconDark.svg" alt="linkedIn icon"
+          /></a>
+        </div>
+      </div>
+    </nav>
+    <section class="grid hero" id="hero">
+      <img id="heroImage" src="media/heroImg.png" alt="hero map" />
+      <div id="heroDescription">
+        <span class="h3"
+          >Find the right location for your next site with the getplace.io</span
+        >
+      </div>
+      <h1 id="heroTitle" class="break-l">Households Density Heat Map</h1>
+      <!-- <div id="heroBottom"> -->
+      <div id="heroAvailable">
+        <span class="h3">
+          <img src="./media/Pin.svg" alt="pin icon" class="pin" />Available for
+          the whole UK
+        </span>
+      </div>
+      <div id="heroButton">
+        <button
+          class="blue-button"
+          onclick="document.location.href='#pricing'"
+          id="heroblue-button"
+        >
+          Get access now
+        </button>
+
+        <a href="/sources.html" target="_blank">Learn about data</a>
+      </div>
+
+      <!-- </div> -->
+    </section>
+    <section class="grid htu" id="htu">
+      <h2>How to use Households Density Heat Map</h2>
+      <div id="htuContent">
+        <div id="htuVideoWrapper">
+          <iframe
+            class="responsive-iframe"
+            width="100%"
+            height="100%"
+            src="https://www.youtube.com/embed/bAVqjVWqLL8"
+          >
+          </iframe>
+        </div>
+        <div id="htuStepsWrapper">
+          <div class="step">
+            <h3>
+              <img src="./media/Pin.svg" alt="pin icon" class="pin" />Step 1
+            </h3>
+            <p>
+              Start by choosing a desired region or target area, such as a city
+              or specific zip code.
+            </p>
+          </div>
+          <div class="step">
+            <h3>
+              <img src="./media/Pin.svg" alt="pin icon" class="pin" />Step 2
+            </h3>
+            <p>
+              Explore the households density heat map, which displays varying
+              shades or intensities of color, to identify areas with a high
+              concentration of households.
+            </p>
+          </div>
+          <div class="step">
+            <h3>
+              <img src="./media/Pin.svg" alt="pin icon" class="pin" />Step 3
+            </h3>
+            <p>
+              Utilize the insights gained from the households density heat map
+              to guide your advertising efforts or expansion plans, targeting
+              regions with a dense population of potential customers.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="grid" id="mapping">
+      <h2 id="mappingTopDiv">Mapping UK Household Structure</h2>
+      <div id="mappingContent">
+        <div class="mappingLeft">
+          <div class="mappingBlockContainer">
+            <div>
+              <p>
+                The Households Density Heat Map layer offers a comprehensive
+                view of the residential distribution within the cities of the
+                UK.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="mappingRight">
+          <p style="margin-bottom: 30px">
+            By choosing this data layer, you can explore the density
+            of households in different areas, helping to understand population
+            concentrations and residential patterns.
+          </p>
+          <p>
+            This information is invaluable for businesses and organizations
+            involved in market research, real estate development, and urban
+            planning. By analyzing the Households Density Heat Map, you can
+            uncover insights that drive strategic decision-making and tailor
+            your services to meet the needs of specific communities.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="pricing" class="pricing">
+      <div class="pricing__container">
+        <h2 class="pricing__title">
+          Ready to get started?
+          <img src="img/underline-yellow.svg" alt="" />
+        </h2>
+        <h3 class="pricing__subtitle">Choose a plan tailored to your needs</h3>
+        <div class="pricing__slider swiper">
+          <div class="pricing__wrapper swiper-wrapper">
+            <div class="pricing__slide swiper-slide">
+              <div class="pricing__slide-title">
+                <picture
+                  ><source srcset="img/icon-report-1.webp" type="image/webp" />
+                  <img src="img/icon-report-1.png" alt=""
+                /></picture>
+                Pay As You Go
+              </div>
+              <div class="pricing__slide-subtitle">
+                Perfect for getting started
+              </div>
+              <div class="pricing__slide-price">
+                £<span class="pricing__slide-price-number">25</span>
+                <span class="pricing__slide-price-text">per report</span>
+              </div>
+              <a
+                href="report.html"
+                class="pricing__slide-button button-transparent"
+                >Get Report</a
+              >
+              <div class="pricing__slide-desc">Includes</div>
+              <ul class="pricing__slide-list">
+                <li class="_icon-checkmark">
+                  Single report for any UK location
+                </li>
+              </ul>
+            </div>
+            <div class="pricing__slide swiper-slide">
+              <div class="pricing__slide-tag">popular</div>
+              <div class="pricing__slide-title">
+                <picture
+                  ><source srcset="img/icon-report-2.webp" type="image/webp" />
+                  <img src="img/icon-report-2.png" alt=""
+                /></picture>
+                Unlimited Reports
+              </div>
+              <div class="pricing__slide-subtitle">
+                Best choice to get data-driven
+              </div>
+              <div class="pricing__slide-price">
+                £<span class="pricing__slide-price-number">69</span>
+                <span class="pricing__slide-price-text">per month</span>
+              </div>
+              <a
+                href=""
+                class="pricing__slide-button button-main unlimited-reports-b"
+                >Subscribe</a
+              >
+              <div class="pricing__slide-desc">Includes</div>
+              <ul class="pricing__slide-list">
+                <li class="_icon-checkmark">Unlimited number of reports</li>
+                <li class="_icon-checkmark">Dedicated advisory</li>
+              </ul>
+            </div>
+            <div class="pricing__slide swiper-slide">
+              <div class="pricing__slide-title">
+                <picture
+                  ><source srcset="img/icon-report-3.webp" type="image/webp" />
+                  <img src="img/icon-report-3.png" alt=""
+                /></picture>
+                Full Access
+              </div>
+              <div class="pricing__slide-subtitle">
+                Customized for your business
+              </div>
+              <div class="pricing__slide-price">
+                £<span class="pricing__slide-price-number">99</span>
+                <span class="pricing__slide-price-text">per month</span>
+              </div>
+              <a
+                href="#"
+                class="pricing__slide-button button-transparent full-sub-b"
+                >Subscribe</a
+              >
+              <div class="pricing__slide-desc">Includes</div>
+              <ul class="pricing__slide-list">
+                <li class="_icon-checkmark">Everything in Unlimited Reports</li>
+                <li class="_icon-checkmark">UK Footfall Heat Map</li>
+                <li class="_icon-checkmark">Tools for competitors analysis</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="pricing__bottom">
+          Are you an enterprise? <a href="#">Contact us</a> to discuss
+          individual solutions.
+        </div>
+      </div>
+    </section>
+    <section class="grid locationReports" id="locationReports">
+      <span id="locationSubTitle" class="h3">
+        Explore more <span class="blueColor">Getplace.io</span> products
+      </span>
+      <h2 id="locationTitle">Location Reports</h2>
+      <div id="locationVideoWrapper">
+        <!--iframe
+          class="responsive-iframe"
+          width="100%"
+          height="100%"
+          src="https://www.youtube.com/embed/HKhcd5EFXKA"
+        >
+        </iframe-->
+        <iframe
+          class="responsive-iframe"
+          width="100%"
+          height="100%"
+          src="https://www.youtube.com/embed/C_Ci5kdkFoM"
+        >
+        </iframe>
+      </div>
+      <div id="locationText">
+        <p>
+          Insert any address or postcode in the UK and get a report with data on
+        </p>
+        <ul id="locationUl">
+          <li>Pedestrian and vehicle traffic</li>
+          <li>Demographics of residents</li>
+          <li>Amenities around location</li>
+          <li>Closest competitors and their reviews</li>
+        </ul>
+        <div id="locationBtnDesctop">
+          <a href="/report" target="_blank">Learn more about reports</a>
+        </div>
+      </div>
+      <div id="locationBtnMobile">
+        <div class="locationBtnWrapper">
+          <button class="white-button" id="locationButton">
+            Reports only | £100
+          </button>
+          <button
+            class="grey-button"
+            id="locationGreyBtn"
+            onclick=" window.open('/report/#cta','_blank')"
+          >
+            Get 1 report for £15
+          </button>
+        </div>
+        <a href="/report" id="locationLink" target="_blank"
+          >Learn more about reports</a
+        >
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="footer-left">
+          <a class="footer-logo" href="/">getplace.io</a>
+          <div class="footer-icons">
+            <a href="mailto:info@getplace.io"
+              ><img src="./mediaMain/messageIcon.svg" alt="Email Message Icon"
+            /></a>
+            <a
+              href="https://www.linkedin.com/company/getplace-io/"
+              target="_blank"
+              ><img src="./mediaMain/linkedinIcon.svg" alt="LinkedIn Icon"
+            /></a>
+          </div>
+        </div>
+        <div class="footer-right">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/report">Location Reports</a></li>
+            <li><a href="/heatmap">Heat Map</a></li>
+          </ul>
+          <img src="./mediaMain/GDPR.png" alt="GDPR Compliance Badge" />
+        </div>
+      </div>
+      <span class="h3">
+        We measure the offline world to help businesses make right strategic
+        decisions.
+      </span>
+      <div class="footer-bottom">
+        <ul>
+          <li><a href="mailto:info@getplace.io">info@getplace.io</a></li>
+          <li><a href="/sources.html" target="_blank">Data Sources</a></li>
+          <li><a href="/privacy.html" target="_blank">Privacy Policy</a></li>
+          <li><a href="/blog" target="_blank">Blog</a></li>
+          <li>© 2023</li>
+        </ul>
+        <img src="./mediaMain/GDPR.png" alt="GDPR Compliance Badge" />
+      </div>
+    </footer>
+
+    <cookie-consent-banner
+      btn-label-accept-and-continue="Agree and continue"
+      btn-label-only-essential-and-continue="Continue with technically required cookies only"
+      btn-label-persist-selection-and-continue="Save selection and continue"
+      btn-label-select-all-and-continue="Select all and continue"
+      content-settings-description="You can decide which cookies are used by selecting the respective options below. Please note that your selection may impair in the functionality of the service."
+      class="cc-text"
+    >
+      We use cookies and similar technologies to provide certain features,
+      enhance the user experience and deliver content that is relevant to your
+      interests. Depending on their purpose, analysis and marketing cookies may
+      be used in addition to technically necessary cookies. By clicking on
+      "Agree and continue", you declare your consent to the use of the
+      aforementioned cookies.
+      <a
+        href="javascript:document.dispatchEvent(new Event('cookie_consent_details_show'))"
+      >
+        Here</a
+      >
+      you can make detailed settings or revoke your consent (in part if
+      necessary) with effect for the future. For further information, please
+      refer to our
+      <a href="/privacy.html" target="_blank">Privacy Policy</a>.
+    </cookie-consent-banner>
+    <script src="./navbar.js"></script>
+    <script src="./js-snackbar.min.js"></script>
+    <script src="./errors.js"></script>
+    <script src="./footfall.js?0.13"></script>
+    <script src="report.js"></script>
+    <script src="pricing.js"></script>
+  </body>
+</html>

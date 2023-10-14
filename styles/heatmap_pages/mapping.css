@@ -1,0 +1,142 @@
+.mappingBlockContainer{
+    width: 100%;
+    /*height: 100%;*/
+    display: table;
+}
+.mappingBlockContainer div {
+    display: table-cell;
+    vertical-align: bottom;
+}
+.mappingBlockContainer > div > p {
+    display: inline-block;
+    box-shadow: 0px 0px 20px rgba(57, 53, 216, 0.1);
+    border-radius: 30px;
+    padding: 30px;
+    color: #3935d8;
+
+    font-size: 20px;
+    line-height: 140%;
+}
+#mappingTopDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    grid-column: 1/-1;
+    margin-bottom: 20px;
+    text-align: left;
+}
+#mappingTopDiv h2 {
+    display: inline;
+}
+#mappingTopDiv button {
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    height: fit-content;
+}
+#mappingContent {
+    grid-column: 1/-1;
+    display: flex;
+    flex-direction: column;
+    gap: 65px;
+}
+.mappingLeft {
+    position: relative;
+    background: #ffffff;
+    mix-blend-mode: normal;
+    width: 100%;
+}
+.mappingRight {
+    position: relative;
+    width: 100%;
+    border-radius: 30px;
+    position: relative;
+}
+
+.mappingRight .pad {
+    padding-left: 30px;
+}
+
+#mappingBg {
+    pointer-events: none;
+    mix-blend-mode: color-burn;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    right: 0;
+    bottom: 0;
+    border-radius: 30px;
+    background: url(../media/mapBg.png);
+    background-position: bottom right;
+    background-repeat: no-repeat;
+}
+.mappingRight button {
+    position: absolute;
+    bottom: 40px;
+    margin-left: auto;
+    width: fit-content;
+    left: 0;
+    right: 0;
+    margin-right: auto;
+}
+.mappingLink {
+    margin-top: 12px;
+    color: #fff;
+    display: block;
+}
+.mappingTitle {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+    margin-bottom: 20px;
+}
+.mappingListText {
+    margin-bottom: 10px;
+}
+
+@media screen and (min-width: 768px) {
+    #mappingTopDiv {
+        gap: 10px;
+
+        margin-bottom: 60px;
+    }
+    .mappingLeft {
+        background: url(../media/mapBg.png);
+        background-position: bottom right;
+        background-repeat: no-repeat;
+    }
+    .mappingLeft button {
+        left: unset;
+        right: unset;
+    }
+    .mappingRight button {
+        left: unset;
+        right: unset;
+    }
+    #mappingTopDiv button {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+@media screen and (min-width: 1280px) {
+    #mappingContent {
+        flex-direction: row;
+        gap: 30px;
+    }
+
+    #mappingTopDiv {
+        flex-direction: row;
+        gap: 40px;
+        margin-bottom: 80px;
+    }
+    #mappingTopDiv button {
+        align-self: center;
+    }
+}
+@media screen and (min-width: 1600px) {
+    #mappingTopDiv {
+        margin-bottom: 100px;
+    }
+}

@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+{{ city }} Footfall, Vehicle Traffic, and Demographics Analysis: Location Report and Statistics
+    </title>
+    <meta
+            name="description"
+            content="Gain in-depth insights into {{ city }}’s footfall, vehicle traffic patterns, and demographics analysis through a comprehensive location report. Explore valuable statistics and data to optimize business strategies."
+    />
+    <style data-styles="">
+        cookie-consent-banner {
+            visibility: hidden;
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+            href="https://fonts.googleapis.com/css2?family=Krona+One&family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+            rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/stylesReport/styles.css"/>
+    <link rel="stylesheet" href="/stylesReport/js-snackbar.min.css" />
+    <script
+            type="module"
+            src="https://unpkg.com/@porscheofficial/cookie-consent-banner@2.1.0/dist/cookie-consent-banner/cookie-consent-banner.esm.js"
+    ></script>
+
+    <!-- Google tag (gtag.js) -->
+    <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-8V22ZKDGG9"
+    ></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+
+        gtag("config", "G-8V22ZKDGG9");
+    </script>
+
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != "dataLayer" ? "&l=" + l : "";
+            j.async = true;
+            j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, "script", "dataLayer", "GTM-T6C3HGX");
+    </script>
+    <!-- End Google Tag Manager -->
+    <script src="https://www.googleoptimize.com/optimize.js?id=OPT-T9FKZ2M"></script>
+    <link href="https://getplace.io/report/{{ page }}" rel="canonical">
+
+    <!-- Meta Pixel Code -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+            n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t,s)}(window, document,'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '353252573798331');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+                   src="https://www.facebook.com/tr?id=353252573798331&ev=PageView&noscript=1"
+    /></noscript>
+
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript
+><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-T6C3HGX"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+></iframe
+></noscript>
+
+<div id="popUpBg">
+    <div id="popUp">
+        <div id="popUpClose">
+            <img src="../mediaReport/close.svg" alt="close icon" />
+        </div>
+        <div id="popUpContent">
+            <p id="popUpText">
+                Few clicks away from accessing the Footfall Heat Map and unlimited
+                Location Reports
+            </p>
+            <div id="sendform-errs" class="error-form"></div>
+            <form id="popUpForm">
+                <label for="fName">Full Name</label>
+                <input
+                        type="text"
+                        name="fName"
+                        id="_fName"
+                        placeholder="David Smith"
+                />
+                <label for="cName">Company name</label>
+                <input
+                        type="text"
+                        name="cName"
+                        id="_cName"
+                        placeholder="Burger Hero"
+                />
+                <label for="bEmail">Business E-mail</label>
+                <input
+                        type="email"
+                        name="bEmail"
+                        id="_bEmail"
+                        placeholder="email@restaurant.com"
+                />
+                <label for="password">Account Password</label>
+                <input
+                        type="password"
+                        name="password"
+                        id="_password"
+                        placeholder="At least 6 characters"
+                />
+                <input
+                        type="submit"
+                        class="mainBtn popUpButton"
+                        value=""
+                        id="popUpSubmit"
+                />
+            </form>
+            <p class="supServiceText popUpBottomText" id="underSubmitText">
+                By proceeding, I accept the getplace.io
+                <a href="/privacy.html" class="bottomText" target="_blank"
+                >Privacy Policy</a
+                >.
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="popup-bg" id="access-bg">
+    <div class="popup-wrapper" id="access-pu">
+        <div class="popup-close" id="access-close">
+            <img src="../mediaReport/close.svg" alt="close icon" />
+        </div>
+        <div class="popup-text">
+            <h3>Get instant access</h3>
+            <p>Sign up and get 3 reports for free</p>
+        </div>
+        <form class="popup-form">
+            <label for="accessEmail">Business E-mail</label>
+            <input
+                    type="email"
+                    id="getFreeAccessEmail3"
+                    name="accessEmail"
+                    placeholder="email@restaurant.com"
+            />
+            <button class="blue-button submit-button" id="getFreeAccess3">
+                Go to reports
+            </button>
+            <p class="access-no-credit">No credit card required</p>
+            <p class="supText">
+                By proceeding, I accept the getplace.io
+                <a href="/privacy.html" target="_blank" class="underline"
+                >Privacy Policy</a
+                >.
+            </p>
+        </form>
+    </div>
+</div>
+
+<nav class="nav">
+    <div class="navLeft">
+        <div class="nav-logo-wrapper">
+            <a class="navLogo" href="/">getplace.io</a>
+        </div>
+        <div class="navLinks">
+            <ul class="nav-desctop">
+                <li>
+                    <a href="/"><p>Home</p></a>
+                    <ul class="hover-list">
+                        <li><a href="/#reviews">Reviews</a></li>
+                        <li><a href="/#adv">Advantages</a></li>
+                        <li><a href="/#start">How to Start</a></li>
+                        <li><a href="/#pricing">Pricing</a></li>
+                        <li><a href="/#features">Features</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/report"><p>Location Reports</p></a>
+                    <ul class="hover-list">
+                        <li><a href="/report#useCases">How to Use</a></li>
+                        <li><a href="/report#pricing">Pricing</a></li>
+                        <li><a href="/report#reportData">Report Data</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/heatmap"><p>Heat Maps</p></a>
+                    <ul class="hover-list">
+                        <li><a href="/heatmap_households">Households</a></li>
+                        <li><a href="/heatmap_fb">F&B Businesses</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="navRight">
+        <a
+                href="https://calendly.com/denis_getplace"
+                class="white-button bold"
+                target="_blank"
+        >
+            Request a Demo
+        </a>
+        <a
+                class="white-button navLog"
+                href = "https://app.getplace.io/login"
+                rel="nofollow"
+        >
+            Log In
+        </a>
+        <div class="burgerMenu" id="burgerMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <div class="mobileMenu" id="mobileMenu">
+        <p class="mobileMenuText">Menu:</p>
+        <ul>
+            <li class="mobile-li">
+                <p>Home <img src="../mediaReport/v.svg" alt="Transparent Point" /></p>
+                <ul>
+                    <li><a href="/#reviews">Reviews</a></li>
+                    <li><a href="/#adv">Advantages</a></li>
+                    <li><a href="/#start">How to Start</a></li>
+                    <li><a href="/#pricing">Pricing</a></li>
+                    <li><a href="/#features">Features</a></li>
+                </ul>
+            </li>
+            <li class="mobile-li">
+                <p>Location Reports <img src="../mediaReport/v.svg" alt="Transparent Point" /></p>
+                <ul>
+                    <li><a href="/report#useCases">How to Use</a></li>
+                    <li><a href="/report#pricing">Pricing</a></li>
+                    <li><a href="/report#reportData">Report Data</a></li>
+                </ul>
+            </li>
+            <li class="mobile-li">
+                <p>Heat Maps <img src="../mediaReport/v.svg" alt="Transparent Point" /></p>
+                <ul>
+                    <li><a href="/heatmap">Heat map</a></li>
+                    <li><a href="/heatmap_households">Households</a></li>
+                    <li><a href="/heatmap_fb">F&B Businesses</a></li>
+                </ul>
+            </li>
+        </ul>
+
+        <div class="mobileMenuButtons">
+            <a
+                    class="white-button bold requestDemoButton"
+                    href="https://calendly.com/denis_getplace"
+                    target="_blank"
+            >
+                Request a Demo
+            </a>
+            <a class="white-button mobile-login" href="https://app.getplace.io/login" rel="nofollow">Log In</a>
+        </div>
+        <div class="menuIcons">
+            <a href="mailto:info@getplace.io"
+            ><img src="../mediaReport/messageIconDark.svg" alt="email icon"
+            /></a>
+            <a
+                    href="https://www.linkedin.com/company/getplace-io/"
+                    target="_blank"
+            ><img src="../mediaReport/linkedinIconDark.svg" alt="linkedIn icon"
+            /></a>
+        </div>
+    </div>
+</nav>
+
+<!--section class="hero" id="hero">
+    <div class="h2" id="#heroDescription">Get to know the location for your next site with the getplace.io</div>
+    <h1 class="blue">Location Reports</h1>
+    <img id="heroImage" src="./mediaReport/mainHeroImg.png" alt="hero map" />
+    <div id="heroAvailable">
+        <h3 class="h3 pin-icon">Available for the whole UK</h3>
+    </div>
+    <div id="heroButtons">
+        <button
+                class="mainBtn requestDemoButton"
+                id="heroSecButton2"
+                onclick="window.location.href='/report#cta';">
+            Get 1 report for £15
+        </button>
+        <button
+                class="yellow-button"
+                onclick="window.location.href='/report#cta';">
+            Get 1 report for £15
+        </button>
+    </div>
+
+</section-->
+<section class="hero" id="hero">
+    <div id="heroBg"></div>
+    <div class="h2" id="heroDescription">
+        Get to know {{ city }} location for your next site with the getplace.io
+    </div>
+    <h1 class="h1 blueSpan" id="heroTitle">Location Reports {{ city }}</h1>
+    <img id="heroImage" src="../mediaReport/mainHeroImg.png" alt="hero map" />
+    <div id="heroAvailable">
+        <h3 class="h3 pin-icon">Available for the whole UK</h3>
+    </div>
+    <div id="heroButton" class="hOneColumn">
+        <button
+                class="mainBtn requestDemoButton"
+                id="heroSecButton2"
+                onclick="window.location.href='/report#cta';"
+        >
+            Get 1 report for £15
+        </button>
+        <a class="link" href="/sources.html" target="_blank"
+        >Learn about data</a
+        >
+    </div>
+</section>
+<section class="useCases grid" id="useCases">
+    <h2 class="h1" id="useCasesTitle">The getplace.io report is</h2>
+
+    <h3 class="h2" id="useCasesDescription">
+        a time-saving one-stop shop with consolidated data and insights
+    </h3>
+
+    <div id="htuContent">
+        <div id="htuVideoWrapper">
+            <!--iframe
+              class="responsive-iframe"
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/HKhcd5EFXKA"
+            >
+            </iframe-->
+            <iframe
+                    class="responsive-iframe"
+                    width="100%"
+                    height="100%"
+                    src="https://www.youtube.com/embed/C_Ci5kdkFoM"
+            >
+            </iframe>
+        </div>
+        <div id="stepsAndButton">
+            <div id="htuStepsWrapper">
+                <div class="step">
+                    <img src="../mediaReport/Pin.svg" alt="pin icon" class="pin" />
+                    <p class="paragraph">
+                        Check if the surroundings of the location suit your business.
+                    </p>
+                </div>
+                <div class="step">
+                    <img src="../mediaReport/Pin.svg" alt="pin icon" class="pin" />
+
+                    <p class="paragraph">
+                        Save time and reduce risk by making informed decisions.
+                    </p>
+                </div>
+                <div class="step">
+                    <img src="../mediaReport/Pin.svg" alt="pin icon" class="pin" />
+
+                    <p class="paragraph">
+                        Compare alternate locations and ensure a quick return on
+                        investment.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="grid pricing" id="pricing">
+    <div id="pricingTopDiv">
+        <h3 class="h1">Choose the plan</h3>
+    </div>
+
+    <div id="pricingContent">
+        <div class="pricingLeft">
+            <p class="pricingTitle">Getplace.io Unlimited Location Reports</p>
+            <ul class="paragraph">
+                <p class="pricingListTex">
+                    Monthly subscription with
+                    <span class="bold">unlimited access to</span> reports with data
+                    on:
+                </p>
+                <li>Pedestrian and vehicle traffic</li>
+                <li>Demographics of residents</li>
+                <li>Amenities around location</li>
+                <li>Closest competitors and their reviews</li>
+            </ul>
+            <button class="mainBtn" id="reportsOnly">Reports only | £100</button>
+        </div>
+        <div class="pricingRight">
+            <div id="pricingBg"></div>
+            <p class="pricingTitle paragraph">
+                Getplace.io Footfall Heat Map + Location Reports
+            </p>
+            <ul class="paragraph">
+                <p class="pricingListText">
+                    Same as Reports subscription with
+                    <span class="bold">additional access to:</span>
+                </p>
+                <li>Review of footfall patterns in the prominent neighbourhoods</li>
+                <li>Comparison of footfall between locations</li>
+                <li>Finding the site with the right traffic</li>
+            </ul>
+            <a class="pricingLink" href="/heatmap"
+            >Learn more about Footfall Heat Map</a
+            >
+            <button class="secButton" id="heatMapAndReports">
+                Heat Map + Reports £250
+            </button>
+        </div>
+    </div>
+    <div class="pricing-get-started">
+        <p class="blue h1" style="text-align: center">Get started for free</p>
+        <div class="pricing-button">
+            <button
+                    class="yellow-button requestAccess"
+                    style="width: max-content"
+            >
+                Get Instant Access
+            </button>
+            <p class="blue">And 3 Reports for Free</p>
+        </div>
+    </div>
+</section>
+
+<section class="reportData grid" id="reportData">
+    <h2 class="h1" id="reportDataTitle">
+        The data to answer your location questions
+    </h2>
+
+    <div id="footfall">
+        <div>
+            <h3 class="h2 pin-icon">Footfall & Vehicle Traffic</h3>
+            <p class="paragraph dataParagraph">
+                Number of people walking and driving by the location
+            </p>
+            <br/>
+            <ul class="paragraph footfall-rep-paragraph">
+                <li>How many people walk by the potential location?</li>
+                <li>How many cars drive by it?</li>
+                <li>
+                    What is the distribution of traffic throughout the workday? Weekend?
+                    Week? Month?
+                </li>
+            </ul>
+            <p class="paragraph sideTextParagraph">
+                Knowing the footfall and vehicle traffic is the key to estimating
+                the number of people who could potentially be exposed to the brand
+                and making revenue predictions.
+            </p>
+        </div>
+    </div>
+
+    <div id="footfallSideText">
+        <div class="report-grid-block">
+            <div class="rgb-left hdr">{{ city }} snapshot</div>
+            <div class="rgb-right hdr">for {{ address }}</div>
+            <div class="rgb-left rgb-blck paragraph">
+                <p>Average footfall</p>
+                <br />
+                <p>per day: {{ footfall.avg_per_day }} people</p>
+                <p>workday: {{ footfall.avg_workday }} people</p>
+                <p>weekend: {{ footfall.avg_weekend }} people</p>
+            </div>
+            <div class="rgb-right rgb-blck paragraph">
+                <p>Average vehicle traffic</p>
+                <br />
+                <p>per day: {{ vehicles.avg_per_day }} vehicles</p>
+                <p>workday: {{ vehicles.avg_workday }} vehicles</p>
+                <p>weekend: {{ vehicles.avg_weekend }} vehicles</p>
+            </div>
+        </div>
+    </div>
+    <img src="../mediaReport/dataImg.jpg" id="dataImg" alt="" />
+
+    <div class="margin100"></div>
+
+    <div id="demographic">
+        <h3 class="h2 pin-icon">Demographics</h3>
+        <p class="paragraph">
+            Age, gender, relationship status, household income, and more
+        </p>
+    </div>
+    <div id="demographicReportContainer">
+        <div class="demographicReport">
+            <div class="nearby-table">
+                <table class="report-table">
+                    <thead>
+                    <tr>
+                        <th>Radius(yards)</th>
+                        <th>100 yards</th>
+                        <th>500 yards</th>
+                        <th>1000 yards</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Number of people</td>
+                        <td>{{ in_radius['pop100'] }}</td>
+                        <td>{{ in_radius['pop500'] }}</td>
+                        <td>{{ in_radius['pop1000'] }}</td>
+                    </tr>
+                    <tr>
+                        <td>Number of buildings</td>
+                        <td>{{ in_radius['buildings100'] }}</td>
+                        <td>{{ in_radius['buildings500'] }}</td>
+                        <td>{{ in_radius['buildings1000'] }}</td>
+                    </tr>
+                    </tbody>
+
+                </table>
+            </div>
+            <div class="age-chart">
+                <div class="hdr">Age</div>
+                <div id="demoChart"></div>
+            </div>
+            <div class="pop-data">
+                <div id="etn-rel-gen">
+                    <div class="etn">
+                        <div class="hdr">Ethnic markup</div>
+                        <br />
+                        {% if ethnic.hasOwnProperty('data') && ethnic.data.length > 0 %}
+                        <p>Main:</p>
+                        <b> {{ ethnic['data'][0]['index'] }} - {{ ethnic['data'][0]['value'] }}%</b>
+                        <br/>
+                        {% endif %}
+                        {% if ethnic_more_than_avg.length > 0 %}
+                        <p>Higher than average:</p>
+                        <b>{{ ethnic_more_than_avg[0].index }} - {{ ethnic_more_than_avg[0].value }}%</b><br/>
+                        {% if ethnic_more_than_avg.length > 1 %}
+                        <b>{{ ethnic_more_than_avg[1].index }} - {{ ethnic_more_than_avg[1].value }}%</b>
+                        {% endif %}
+                        {% endif %}
+                    </div>
+                    <div class="rel">
+                        <div class="hdr">Religion</div>
+                        <br />
+                        {% if religion.hasOwnProperty('data') && religion.data.length > 0 %}
+                        <p>Main:</p>
+                        <b>{{ religion['data'][0]['index'] }} - {{ religion['data'][0]['value'] }}%</b>
+                        <br/>
+                        {% endif %}
+                        {% if religion_more_than_avg.length > 0 %}
+                        <p>Higher than average:</p>
+                        <b>{{ religion_more_than_avg[0].index }} - {{ religion_more_than_avg[0].value }}%</b><br/>
+                        {% if religion_more_than_avg.length > 1 %}
+                        <b>{{ religion_more_than_avg[1].index }} - {{ religion_more_than_avg[1].value }}%</b>
+                        {% endif %}
+                        {% endif %}
+                    </div>
+                    <div class="gen">
+                        <div class="hdr">Gender</div>
+                        <div class="gender-report-graph">
+                            <div style="width:{{ gender.female }}%"></div>
+                            <div style="width:{{ gender.male }}%"></div>
+                        </div>
+                        <div class="gender-report-items">
+                            <div style="width: {{ gender.female }}%;">Female — <span>{{ gender.female }}%</span></div>
+                            <div style="width: {{ gender.male }}%;">Male — <span>{{ gender.male }}%</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="demographicSideText">
+        <div class="report-grid-block">
+            <div class="rgb-left hdr">{{ city }} snapshot</div>
+            <div class="rgb-right hdr">for {{ address }}</div>
+            <div class="rgb-left rgb-blck paragraph">
+                <p>Number of residents: {{ age_total }} people</p>
+                {% if age_sorted.hasOwnProperty('data') && age_sorted.data.length > 0 %}
+                <p>Largest age group: {{ age_sorted.data[0].index }} years, {{ age_sorted.data[0].value }}%</p>
+                {% endif %}
+                {% if age_sorted.hasOwnProperty('data') && age_sorted?.data?.length > 1 %}
+                <p>Second largest: {{ age_sorted.data[1].index }} people, {{ age_sorted.data[1].value }}%</p>
+                {% endif %}
+                {% if !!crime %}
+                <br />
+                <p>Crime rating: {{ crime }}</p>
+                {% endif %}
+            </div>
+            <div class="rgb-right rgb-blck paragraph">
+                <p>Relationship status</p>
+                {% if relationship.hasOwnProperty('data') && relationship.data.length > 0 %}
+                <p>Main: {{ relationship.data[0].index }},  {{ relationship.data[0].value }}%</p>
+                {% endif %}
+                {% if relationship.hasOwnProperty('data') && relationship?.data?.length > 1 %}
+                <p>Second: {{ relationship.data[1].index }}, {{ relationship.data[1].value }}%</p>
+                {% endif %}
+                {% if religion.hasOwnProperty('data') && religion.data.length > 0 %}
+                <br />
+                <p>Main religion: {{ religion.data[0].index }}, {{ religion.data[0].value }}%</p>
+                {% endif %}
+            </div>
+        </div>
+        <ul class="paragraph">
+            <li>Who are the people living and working around that location?</li>
+            <li>Do they fit my target audience?</li>
+            <li>
+                How many people are there within a 100 yards radius? 500? 1000?
+            </li>
+        </ul>
+        <p class="paragraph sideTextParagraph" style="margin-bottom: 20px;">
+            Demographic data will help you make sure that there is a sufficient
+            pool of potential customers around the target location. We bridge
+            multiple sources of data and collate it all in one place.
+        </p>
+        <br />
+        <div id="demoButtons">
+            <button class="yellow-button requestAccess">Get Instant Access</button>
+            <p>And 3 Reports for Free</p>
+        </div>
+    </div>
+    <div class="margin100"></div>
+
+    <div id="amenities">
+        <div>
+        <h3 class="h2 pin-icon">Amenities</h3>
+        <p class="paragraph dataParagraph">
+            Accessibility of the location and points of interest
+        </p>
+        </div>
+        <div class="gridB">
+        <p class="hdr-main hdr">{{ city }} Snapshot</p>
+        <div class="rgb-blck">
+            <p>Total facilities around:</p>
+            <br/>
+            <p>Public transport stops: {{ stops }}</p>
+            <p>Parkings: {{ parkings }}</p>
+            <p>Retail spots: {{ retail_spots }}</p>
+            <p>Education facilities: {{ education }}</p>
+            <p>Banks: {{ banks }}</p>
+            <p>Post offices: {{ post_offices }}</p>
+        </div>
+        <p class="hdr-sec hdr">for {{ address }}</p>
+        </div>
+    </div>
+
+    <img
+            src="/mediaReport/Ameni-min.jpg"
+            alt="Amenities image"
+            id="amenitiesImg"
+    />
+
+    <div id="amentitiesSideText">
+        <ul class="paragraph">
+            <li>How accessible is the location?</li>
+            <li>What kind of supermarkets and groceries stores are nearby?</li>
+            <li>
+                Are there any educational facilities nearby, such as nurseries,
+                schools, or universities?
+            </li>
+            <p class="paragraph sideTextParagraph">
+                Knowing amenities around your location will help understand which
+                kinds of people are going to be visiting these places and how best
+                to position your establishment to be visible to them.
+            </p>
+        </ul>
+
+    </div>
+    <div class="margin100"></div>
+    <div id="competitorsContainer">
+        <div class="cDescr">
+            <h3 class="h2 pin-icon">Competitors</h3>
+            <p class="paragraph dataParagraph" id="competitorsParagraph">
+                Competitors, their type, distance from location, rating, number of
+                reviews, and more
+            </p>
+        </div>
+        <div class="cCntn">
+            <div class="report-grid-block">
+                <div class="rgb-left hdr">{{ city }} snapshot</div>
+                <div class="rgb-right hdr">for {{ address }}</div>
+                <div class="rgb-left rgb-blck paragraph">
+                    {% if reviews_max.name !== "" %}
+                    <p>Highest reviews number: {{ reviews_max.user_ratings_total }} - {{ reviews_max.name }}</p>
+                    {% endif %}
+                    {% if reviews_min.name !== "" %}
+                    <p>Lowest: {{ reviews_min.user_ratings_total }} - {{ reviews_min.name }}</p>
+                    {% endif %}
+                </div>
+                <div class="rgb-right rgb-blck paragraph">
+                    {% if reviews_rating_max.name != "" %}
+                    <p>Highest rating: {{ reviews_rating_max.rating }} - {{ reviews_rating_max.name }}</p>
+                    {% endif %}
+                    {% if reviews_rating_min.name != "" %}
+                    <p>Lowest: {{ reviews_rating_min.rating }} - {{ reviews_rating_min.name }}</p>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="competitorsSideTextMobile">
+        <ul class="paragraph">
+            <li>What competition will my business have to face?</li>
+            <li>What do their customers think about them?</li>
+            <li>Are the big brands there?</li>
+            <li>
+                Are there enough competitors around to drive people to that
+                location?
+            </li>
+            <p class="paragraph sideTextParagraph">
+                Competitive analysis will help to paint a clear picture of the
+                surroundings, understand what makes this location tick and identify
+                hidden opportunities.
+            </p>
+        </ul>
+    </div>
+    <img
+            src="../mediaReport/competitorsImg.jpg"
+            alt="Competitors Img"
+            id="competitorsImg"
+    />
+    <div id="competitorsSideText">
+        <ul class="paragraph">
+            <li>What competition will I have to face?</li>
+            <li>What do their customers think about them?</li>
+            <li>Are the big brands there?</li>
+            <li>
+                Are there enough competitors around to drive people to that
+                location?
+            </li>
+            <p class="paragraph sideTextParagraph">
+                Competitive analysis will help paint a clear picture of the
+                surroundings, understand what makes this location tick and identify
+                hidden opportunities.
+            </p>
+        </ul>
+    </div>
+</section>
+
+<section class="cta grid" id="cta">
+    <h2 class="h1" id="ctaTitle">Try one-click location check</h2>
+
+    <div id="bottomFormWrapper">
+        <p class="description" id="ctaDescription">
+            Enter your potential location and get a personal report immediately
+            following receipt of payment:
+        </p>
+        <form id="heroForm">
+            <label for="geocoder2" class="serviceTextBold formText">
+                Enter the address you want to inspect:
+            </label>
+            <!-- <input
+              type="text"
+              class="serviceText"
+              placeholder="Address"
+              id="addressInput"
+            /> -->
+            <div class="geo" id="geocoder2"></div>
+            <label class="serviceTextBold formText" id="topLabel">
+                Enter the contact to receive the report:
+            </label>
+            <label class="supServiceText" for="geocoder2_name" id="nameLabel"
+            >Recipient’s Full Name</label
+            >
+            <label
+                    class="supServiceText"
+                    for="geocoder2_company"
+                    id="companyLabel"
+            >Company Name</label
+            >
+            <input
+                    type="text"
+                    class="serviceText nameInput"
+                    placeholder="Recipient's Full Name"
+                    id="geocoder2_name"
+            />
+            <label class="supServiceText" for="" id="companyLabelMobile"
+            >Company Name</label
+            >
+            <input
+                    type="text"
+                    class="serviceText companyInput"
+                    placeholder="Company name"
+                    id="geocoder2_company"
+            />
+            <label class="supServiceText" for="geocoder2_email" id="emailLabel"
+            >Business E-mail</label
+            >
+            <input
+                    type="email"
+                    class="serviceText"
+                    placeholder="Business E-mail"
+                    id="geocoder2_email"
+            />
+            <div id="ctaBottomWrapper">
+                <div id="ctaButtonsWrapper">
+                    <input
+                            class="greyButton"
+                            id="ctaSubmit"
+                            type="button"
+                            value="Get personal report for £15"
+                            onclick="sendForm('geocoder2')"
+                    />
+                </div>
+                <p id="underSubmitText" class="supServiceText fixedWidth">
+                    By proceeding, I accept the getplace.io
+                    <a href="/privacy.html" target="_blank">Privacy Policy</a>.
+                </p>
+            </div>
+        </form>
+    </div>
+    <div id="ctaImg"></div>
+    <div
+            src="../mediaReport/bottomImage.jpg"
+            alt="cta image"
+            id="ctaImgMobile"
+    ></div>
+</section>
+
+<section class="grid locationReports" id="locationReports">
+    <h3 class="h2" id="locationSubTitle">
+        Explore more Getplace.io products
+    </h3>
+    <h2 class="h1" id="locationTitle">Footfall Heat Map</h2>
+    <div id="locationVideoWrapper">
+        <iframe
+                class="responsive-iframe"
+                width="100%"
+                height="100%"
+                src="https://www.youtube.com/embed/Lu4nNc0gijg"
+        >
+        </iframe>
+    </div>
+    <div id="locationText">
+        <p class="paragraph">Select any point on the map to learn about it</p>
+        <ul id="locationUl" class="paragraph">
+            <li>Review of footfall patterns in the prominent neighbourhoods</li>
+            <li>Comparison of footfall between locations</li>
+            <li>Finding the site with the right traffic</li>
+        </ul>
+        <div id="locationBtnDesctop">
+            <a class="serviceText underline" href="/heatmap"
+            >Learn more about Footfall Heat Map</a
+            >
+        </div>
+    </div>
+    <a
+            class="serviceText underline"
+            href="/heatmap"
+            id="locationLink"
+            target="_blank"
+    >Learn more about Footfall Heat Map</a
+    >
+</section>
+
+<footer class="footer">
+    <div class="footer-top">
+        <div class="footer-left">
+            <a class="footer-logo" href="/">getplace.io</a>
+            <div class="footer-icons">
+                <a href="mailto:info@getplace.io"
+                ><img src="/mediaMain/messageIcon.svg" alt="Email Message Icon"
+                /></a>
+                <a
+                        href="https://www.linkedin.com/company/getplace-io/"
+                        target="_blank"
+                ><img src="/mediaMain/linkedinIcon.svg" alt="LinkedIn Icon"
+                /></a>
+            </div>
+        </div>
+        <div class="footer-right">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/report">Location Reports</a></li>
+                <li><a href="/heatmap">Heat Maps</a></li>
+            </ul>
+            <img src="/mediaMain/GDPR.png" alt="GDPR Compliance Badge" />
+        </div>
+    </div>
+    <div class="h3">
+        We measure the offline world to help businesses make right strategic
+        decisions.
+    </div>
+    <div class="footer-bottom">
+        <ul>
+            <li><a href="mailto:info@getplace.io">info@getplace.io</a></li>
+            <li><a href="/sources.html" target="_blank">Data Sources</a></li>
+            <li><a href="/privacy.html" target="_blank">Privacy Policy</a></li>
+            <li><a href="/blog" target="_blank">Blog</a></li>
+            <li>© 2023</li>
+        </ul>
+        <img src="/mediaMain/GDPR.png" alt="GDPR Compliance Badge" />
+    </div>
+</footer>
+
+<cookie-consent-banner
+        btn-label-accept-and-continue="Agree and continue"
+        btn-label-only-essential-and-continue="Continue with technically required cookies only"
+        btn-label-persist-selection-and-continue="Save selection and continue"
+        btn-label-select-all-and-continue="Select all and continue"
+        content-settings-description="You can decide which cookies are used by selecting the respective options below. Please note that your selection may impair in the functionality of the service."
+        class="cc-text"
+>
+    We use cookies and similar technologies to provide certain features,
+    enhance the user experience and deliver content that is relevant to your
+    interests. Depending on their purpose, analysis and marketing cookies may
+    be used in addition to technically necessary cookies. By clicking on
+    "Agree and continue", you declare your consent to the use of the
+    aforementioned cookies.
+    <a
+            href="javascript:document.dispatchEvent(new Event('cookie_consent_details_show'))"
+    >
+        Here</a
+    >
+    you can make detailed settings or revoke your consent (in part if
+    necessary) with effect for the future. For further information, please
+    refer to our
+    <a href="/privacy.html" target="_blank">Privacy Policy</a>.
+</cookie-consent-banner>
+
+<script src='https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js'></script>
+<link href='https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css' rel='stylesheet' />
+
+<script src="https://unpkg.com/h3-js"></script>
+
+<script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.0/mapbox-gl-geocoder.min.js"></script>
+<script src="/js-snackbar.min.js"></script>
+<script src="/errors.js"></script>
+<link
+        rel="stylesheet"
+        href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.0/mapbox-gl-geocoder.css"
+        type="text/css"
+/>
+<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+<script src="/report_page.js?0.03"></script>
+<script>
+    // chart
+    {% if age_report !== '{"fields":null,"data":null}' %}
+    let options = ProcessAgeData({{ age_report|raw }});
+    let chart = new ApexCharts(document.querySelector("#demoChart"), options);
+    chart.render();
+    {% endif %}
+    // map
+    //InitMap({{ amenities_report|raw }}, {{ transport_report|raw }}, {{lat|raw}}, {{lng|raw}});
+</script>
+</body>
+</html>

@@ -1,0 +1,126 @@
+:root {
+  --blue: #3935d8;
+  --black: #2c2c2c;
+  --yellow: #ffc81d;
+  --main-shadow: 0px 0px 20px rgba(57, 53, 216, 0.1);
+  --page-padding: 10px;
+}
+
+h1 {
+  font-family: "Krona One";
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 38px;
+}
+h2 {
+  font-family: "Krona One";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
+}
+h3 {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 30px;
+}
+h4 {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+}
+p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+}
+.bold {
+  font-weight: 600;
+}
+.supText {
+  font-size: 14px;
+  line-height: 19px;
+  color: #ababab;
+}
+button {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+}
+input {
+  font-size: 18px;
+}
+
+@media (min-width: 768px) {
+  :root {
+    --page-padding: 20px;
+  }
+  h1 {
+    font-size: 60px;
+    line-height: normal;
+  }
+  h2 {
+    font-size: 30px;
+    line-height: 140%;
+  }
+  h3 {
+    font-size: 22px;
+    line-height: 30px;
+  }
+  h4 {
+    font-size: 22px;
+    line-height: 140%;
+  }
+  p {
+    font-size: 18px;
+    line-height: 140%;
+  }
+  .supText {
+    font-size: 14px;
+    line-height: 19px;
+  }
+  button {
+    font-size: 18px;
+    line-height: 25px;
+  }
+}
+@media (min-width: 1280px) {
+  :root {
+    --page-padding: 40px;
+  }
+}
+@media (min-width: 1600px) {
+  :root {
+    --page-padding: 80px;
+  }
+  h1 {
+    font-size: 80px;
+    line-height: 100px;
+  }
+  h2 {
+    font-size: 40px;
+    line-height: 120%;
+  }
+  h3 {
+    font-size: 26px;
+    line-height: 35px;
+  }
+  h4 {
+    font-size: 26px;
+    line-height: 140%;
+  }
+  p {
+    font-size: 20px;
+    line-height: 140%;
+  }
+  .supText {
+    font-size: 14px;
+    line-height: 19px;
+  }
+  button {
+    font-size: 20px;
+    line-height: 27px;
+  }
+  input {
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,373 @@
+.reportData {
+  position: relative;
+  margin-top: 100px;
+}
+
+#demographic {
+  grid-column: 1/2;
+  margin-bottom: 20px;
+}
+#footfall {
+  grid-column: 1/2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sideTextParagraph {
+  margin-top: 20px;
+}
+#reportDataTitle {
+  margin-bottom: 60px;
+  grid-column: 1 / 2;
+}
+
+.dataParagraph {
+  margin-top: 10px;
+}
+#demographicImg {
+  width: 100%;
+  height: auto;
+  box-shadow: 0px 0px 20px rgba(57, 53, 216, 0.1);
+  border-radius: 50px;
+  grid-column: 1/-1;
+  margin-bottom: 30px;
+}
+.demographicButton {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-content: center;
+  margin-top: 30px;
+  text-align: center;
+}
+#demographicSideText {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  grid-column: 1/2;
+}
+#footfallSideText {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  grid-column: 1/2;
+}
+
+#footfall {
+  grid-column: 1/2;
+}
+#dataImg {
+  width: calc(100vw - 20px);
+  margin-top: 60px;
+  grid-column: 1/2;
+  height: auto;
+}
+#amenities {
+  grid-column: 1/2;
+}
+#amenitiesImg {
+  width: calc(100vw - 20px);
+  height: auto;
+  box-shadow: 0px 0px 20px rgba(57, 53, 216, 0.1);
+  border-radius: 50px;
+  grid-column: 1/2;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+#amentitiesSideText {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  grid-column: 1/2;
+}
+#competitors {
+  grid-column: 1/2;
+}
+#competitorsParagraph {
+  width: 70%;
+}
+#competitorsImg {
+  margin-left: -10px;
+  width: calc(100vw - 20px);
+  height: auto;
+  grid-column: 1/2;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+#competitorsSideTextMobile {
+  margin-top: 20px;
+  display: flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  grid-column: 1/2;
+}
+#competitorsSideText {
+  display: none;
+}
+#bgMapLeft {
+  position: absolute;
+  z-index: -1;
+  bottom: 0;
+  left: -10px;
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .reportData {
+    position: relative;
+    margin-top: 100px;
+  }
+  .takeALook {
+    display: none;
+  }
+  .takeALookMobile {
+    display: none;
+  }
+  .takeALookTablet {
+    display: block;
+    width: fit-content;
+    align-self: center;
+    margin-left: auto;
+    grid-column: 3/4;
+  }
+  #demographic {
+    grid-column: 1/3;
+    margin-bottom: 30px;
+  }
+  #footfall {
+    grid-column: 1/3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  li {
+    margin-left: 20px;
+  }
+  .sideTextParagraph {
+    margin-top: 20px;
+  }
+  #reportDataTitle {
+    margin-bottom: 100px;
+    grid-column: 1 / 4;
+  }
+
+  .dataParagraph {
+    margin-top: 10px;
+  }
+  #demographicImg {
+    grid-column: 1/3;
+    margin-bottom: 0;
+  }
+  .demographicButton {
+    grid-column: 3/4;
+    grid-row: 7/8;
+
+    margin-top: auto;
+  }
+  #demographicSideText {
+    margin-top: 30px;
+    grid-column: 1/-1;
+  }
+  #footfallSideText {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    grid-column: 3/5;
+  }
+  #demographicSideText {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    grid-column: 3/5;
+  }
+  #footfall {
+    grid-column: 1/3;
+  }
+  #dataImg {
+    width: calc(100vw - 20px);
+    margin-top: 60px;
+    grid-column: 1/4;
+    height: auto;
+  }
+  #amenities {
+    grid-column: 1/3;
+  }
+  #amenitiesImg {
+    width: calc(100vw - 40px);
+    grid-column: 1/4;
+  }
+  #amentitiesSideText {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    grid-column: 4/5;
+  }
+  #competitors {
+    margin-bottom: 40px;
+    grid-column: 1/3;
+  }
+  #competitorsParagraph {
+    width: 70%;
+  }
+  #competitorsImg {
+    width: calc(100vw - 20px);
+    margin-left: -20px;
+    grid-column: 1/4;
+  }
+  #competitorsSideTextMobile {
+    margin-top: 0;
+    grid-column: 1/4;
+  }
+  #bgMapLeft {
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    left: -80px;
+    width: 100%;
+    height: auto;
+  }
+  #footfallSideText {
+    grid-column: 1/4;
+  }
+  #demographicSideText {
+    grid-column: 1/4;
+  }
+  #dataImg {
+    grid-column: 1/4;
+  }
+  #amentitiesSideText {
+    grid-column: 1/4;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .reportData {
+    position: relative;
+    margin-top: 300px;
+  }
+  .takeALook {
+    width: fit-content;
+    margin-top: auto;
+    display: block;
+  }
+  .takeALookMobile {
+    display: none;
+  }
+  .takeALookTablet {
+    display: none;
+  }
+  #demographic {
+    grid-column: 1/3;
+    margin-bottom: 40px;
+  }
+  #footfall {
+    grid-column: 1/3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  li {
+    margin-left: 20px;
+  }
+  .sideTextParagraph {
+    margin-top: 20px;
+  }
+  #reportDataTitle {
+    margin-bottom: 100px;
+    grid-column: 1 / 4;
+  }
+
+  .dataParagraph {
+    margin-top: 10px;
+  }
+
+  .demographicButton {
+    grid-column: 3/5;
+    grid-row: 6/7;
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+    width: 100%;
+  }
+  .demographicButton button,
+  .demographicButton a {
+    max-width: 300px;
+    width: 100%;
+  }
+  #demographicSideText {
+    justify-content: start;
+    grid-row: 6/7;
+    margin-top: 0px;
+    grid-column: 3/5;
+  }
+  #footfallSideText {
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    grid-column: 3/5;
+  }
+
+  #football {
+    grid-column: 1/3;
+  }
+  #dataImg {
+    width: calc(100vw - 80px);
+    margin-top: 60px;
+    grid-column: 1/5;
+    height: auto;
+  }
+  #amenities {
+    grid-column: 1/2;
+  }
+  #amenitiesImg {
+    width: calc((((100vw - 280px) / 4) * 2) + 40px);
+    height: auto;
+    box-shadow: 0px 0px 20px rgba(57, 53, 216, 0.1);
+    border-radius: 50px;
+    grid-column: 2/4;
+  }
+  #amentitiesSideText {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    grid-column: 4/5;
+  }
+  #competitors {
+    margin-bottom: 40px;
+    grid-column: 1/3;
+  }
+  #competitorsParagraph {
+    width: 50%;
+  }
+  #competitorsImg {
+    margin: 0;
+    margin-left: -80px;
+    width: calc((((100vw - 160px) / 4) * 3) + 60px);
+    height: auto;
+    grid-column: 1/4;
+  }
+  #competitorsSideTextMobile {
+    display: none;
+  }
+  #competitorsSideText {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    grid-column: 4/5;
+  }
+  #bgMapLeft {
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    left: -80px;
+    width: 100%;
+    height: auto;
+  }
+}

@@ -1,0 +1,241 @@
+#nav {
+  z-index: 3;
+  position: fixed;
+  top: 10px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+  width: 100%;
+}
+
+#navLogo {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+  text-decoration: none;
+  color: #3935d8;
+  z-index: 2;
+}
+
+#navLeft {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  justify-content: space-between;
+  background: #fff;
+  border-radius: 0px 40px 40px 0px;
+  padding: 0 20px;
+  margin-left: -20px;
+}
+#navLinks {
+  display: none;
+}
+#navLinks ul {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+}
+#navLinks ul li {
+  margin: 0;
+}
+#navLinks ul li a {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  text-decoration: none;
+  color: #2c2c2c;
+}
+#navLinks ul li a:hover {
+  color: #3935d8;
+}
+#navRight {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: fit-content;
+}
+
+#navLog {
+  display: none;
+  text-decoration: none;
+}
+.burgerMenu {
+  cursor: pointer;
+  position: relative;
+  border-radius: 50%;
+  width: 57px;
+  height: 57px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  background-color: #fff;
+  filter: drop-shadow(0px 0px 20px rgba(57, 53, 216, 0.3));
+  z-index: 2;
+}
+
+.burgerMenu span {
+  transition: all 0.4s ease;
+  position: absolute;
+  display: block;
+  width: 26px;
+  height: 2px;
+  background-color: #3935d8;
+}
+.burgerMenu span:nth-child(1) {
+  top: 22px;
+}
+.burgerMenu span:nth-child(3) {
+  top: 34px;
+}
+
+.burgerMenu.active span:nth-child(1) {
+  top: 26px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.burgerMenu.active span:nth-child(2) {
+  opacity: 0;
+}
+.burgerMenu.active span:nth-child(3) {
+  top: 26px;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+#mobileMenuText {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #3935d8;
+  margin-left: 20px;
+  margin-bottom: 30px;
+}
+.mobileMenu ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-bottom: 60px;
+}
+.mobileMenu ul li {
+  margin-left: 20px;
+}
+.mobileMenu ul li a {
+  color: #2c2c2c;
+  text-decoration: none;
+}
+.mobileMenu ul li a:hover {
+  color: #3935d8;
+}
+#menuIcons {
+  margin-top: auto;
+
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.mobileMenu {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: -10px;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  padding-top: 100px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 100vh;
+  background-color: #fff;
+}
+.mobileMenu:not(.active) {
+  display: none;
+}
+
+#mobileMenuButtons {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#mobileMenuButtons button {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  #nav {
+    padding: 0 20px;
+    top: 20px;
+  }
+  #navLog {
+    display: block;
+    text-decoration: none;
+  }
+
+  #mobileMenuButtons {
+    display: none;
+  }
+  #mobileMenuText {
+    margin-left: 0;
+  }
+  .mobileMenu {
+    left: unset;
+    top: 80px;
+    right: 20px;
+    padding: 30px;
+    height: auto;
+    width: auto;
+    min-width: 320px;
+    box-shadow: 0px 0px 20px rgba(57, 53, 216, 0.3);
+    border-radius: 20px;
+  }
+  .mobileMenu ul {
+    margin-bottom: 0px;
+  }
+  .mobileMenu ul li {
+    margin-left: 0px;
+  }
+  #menuIcons {
+    display: none;
+  }
+  #navLeft {
+    padding: 0 20px;
+    margin-left: -20px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  #nav {
+    padding: 0 40px;
+  }
+  .burgerMenu {
+    display: none;
+  }
+
+  #navLeft {
+    padding: 0 40px;
+    margin-left: -40px;
+    width: 60%;
+    max-width: 950px;
+  }
+  #navLinks {
+    display: block;
+  }
+}
+@media screen and (min-width: 1600px) {
+  #nav {
+    padding: 0 80px;
+  }
+  #navLeft {
+    padding: 0 80px;
+    margin-left: -80px;
+  }
+}

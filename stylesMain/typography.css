@@ -1,0 +1,220 @@
+.h1 {
+  font-family: "Krona One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 38px;
+}
+.h2 {
+  font-family: "Krona One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+}
+.h3 {
+  font-family: "Krona One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+}
+.descriptionBold {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 27px;
+}
+.descriptionBoldSm {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 30px;
+}
+.description {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+}
+.paragraph {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+}
+.serviceText {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+.supServiceText {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+}
+.serviceTextBold {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+@media screen and (min-width: 768px) {
+  .h1 {
+    font-size: 60px;
+    line-height: 75px;
+  }
+  .h2 {
+    font-size: 30px;
+    line-height: 38px;
+  }
+  .h3 {
+    font-family: "Krona One";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 120%;
+    /* or 36px */
+  }
+  .descriptionBold {
+    font-size: 26px;
+    line-height: 35px;
+  }
+  .description {
+    font-size: 22px;
+    line-height: 30px;
+  }
+  .paragraph {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .serviceText {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .supServiceText {
+    font-size: 14px;
+    line-height: 19px;
+  }
+  .serviceTextBold {
+    font-size: 18px;
+    line-height: 25px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .h1 {
+    font-family: "Krona One";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 4.21vw;
+    line-height: 75px;
+  }
+  .h2 {
+    font-family: "Krona One";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 38px;
+  }
+  .h3 {
+    font-family: "Krona One";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 120%;
+    /* identical to box height, or 36px */
+  }
+  .descriptionBold {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+  }
+  .descriptionBoldSm {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 30px;
+  }
+  .description {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+  }
+  .paragraph {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .serviceText {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .supServiceText {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .serviceTextBold {
+    font-size: 20px;
+    line-height: 27px;
+  }
+  .h1 {
+    font-size: 4.21vw;
+    line-height: 100px;
+  }
+  .h2 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .h3 {
+    font-family: "Krona One";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 120%;
+  }
+  .descriptionBold {
+    font-size: 26px;
+    line-height: 35px;
+  }
+  .description {
+    font-size: 26px;
+    line-height: 35px;
+  }
+  .paragraph {
+    font-size: 20px;
+    line-height: 27px;
+  }
+  .serviceText {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .supServiceText {
+    font-size: 14px;
+    line-height: 19px;
+  }
+}

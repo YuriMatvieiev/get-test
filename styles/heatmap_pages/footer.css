@@ -1,0 +1,96 @@
+footer {
+  padding: 20px;
+  background: #2c2c2c;
+}
+#footerTopDiv {
+  display: flex;
+  justify-content: space-between;
+}
+#footerLogo {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+  color: #ffffff;
+  text-decoration: none;
+}
+.footerLink {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  color: #ffffff;
+  text-decoration: none;
+  opacity: 0.5;
+  transition: 0.3s;
+}
+#backToTop:hover {
+  opacity: 1;
+}
+#footerSocial {
+  display: flex;
+  gap: 30px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+#footerText {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#footerText p {
+  font-family: "Krona One";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  color: #fff;
+  max-width: 880px;
+
+  margin-bottom: 30px;
+}
+#footerText img {
+  margin-left: auto;
+}
+#footerBottomDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#footerBottomDiv a,
+#footerBottomDiv p {
+  text-decoration: none;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #ffffff;
+  opacity: 0.5;
+  transition: 0.3s;
+}
+#footerBottomDiv a:hover {
+  opacity: 1;
+}
+
+@media screen and (min-width: 768px) {
+  #footerBottomDiv {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+  #footerText p {
+    margin-bottom: 0;
+    font-size: 24px;
+    line-height: 120%;
+  }
+}
+@media screen and (min-width: 1280px) {
+  #footerText p {
+    font-size: 30px;
+    line-height: 38px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  #footerText p {
+    font-size: 40px;
+    line-height: 140%;
+  }
+}

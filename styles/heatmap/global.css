@@ -1,0 +1,105 @@
+/* @import url("./typography.css"); */
+/* @import url("./footer.css"); */
+@import url("./hero.css");
+@import url("./howtouse.css");
+@import url("./pricing.css");
+/* @import url("./navbar.css"); */
+/* @import url("./popUp.css");
+@import url("./demoPopUp.css"); */
+@import url("./locationReports.css");
+@import "../global.css";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  color: #2c2c2c;
+  overflow-x: hidden;
+}
+
+/* .grid {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  column-gap: 0px;
+  width: 100vw;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+} */
+
+.pin {
+  width: 20px;
+  height: auto;
+  margin-right: 10px;
+}
+.bold {
+  font-weight: 600;
+}
+ul {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+}
+li {
+  margin-left: 35px;
+}
+@media screen and (min-width: 768px) {
+  /* .grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    column-gap: 20px;
+    width: calc(100vw - 40px);
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0;
+    padding-right: 0;
+  } */
+}
+@media screen and (min-width: 1280px) {
+  /* .grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    column-gap: 30px;
+    width: calc(100vw - 80px);
+    margin-left: auto;
+    margin-right: auto;
+  } */
+}
+@media screen and (min-width: 1600px) {
+  /* .grid {
+    column-gap: 40px;
+    width: calc(100vw - 160px);
+    margin-left: auto;
+    margin-right: auto;
+  } */
+}
+
+:root {
+  --cookie-consent-banner-z-index-container: 101;
+  --cookie-consent-banner-colors-primary: var(--blue);
+  --cookie-consent-banner-colors-primary-border: var(
+    --cookie-consent-banner-colors-primary
+  );
+  --cookie-consent-banner-colors-primary-content: #fff;
+
+  --cookie-consent-banner-border-radius-buttons: 100px;
+  --cookie-consent-banner-border-radius-body: 0;
+
+  --cookie-consent-banner-spacings-container-padding-top: 0;
+  --cookie-consent-banner-spacings-container-padding-left: 0;
+  --cookie-consent-banner-spacings-container-padding-bottom: 0;
+  --cookie-consent-banner-spacings-container-padding-right: 0;
+}
+
+.cc-text {
+  font-family: "Open Sans" !important;
+}
+
+.cc-text a {
+  color: #fff !important;
+  text-decoration: underline;
+  font-size: 14px;
+}

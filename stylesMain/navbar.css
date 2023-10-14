@@ -1,0 +1,219 @@
+nav {
+  z-index: 3;
+  position: fixed;
+  top: 10px;
+  /* margin-top: 10px; */
+  height: 55px;
+  /* padding: 0 10px; */
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  padding-right: 10px;
+}
+#navLogo {
+  z-index: 2;
+
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+  text-decoration: none;
+  color: #3935d8;
+  z-index: 2;
+}
+#menuIcons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+#menuIcons a {
+  margin: 0;
+}
+.burgerMenu {
+  cursor: pointer;
+  position: relative;
+  border-radius: 50%;
+  width: 57px;
+  height: 57px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  background-color: var(--white);
+  filter: drop-shadow(0px 0px 20px rgba(57, 53, 216, 0.3));
+  z-index: 2;
+}
+
+.burgerMenu span {
+  transition: all 0.4s ease;
+  position: absolute;
+  display: block;
+  width: 26px;
+  height: 2px;
+  background-color: var(--blue);
+}
+.burgerMenu span:nth-child(1) {
+  top: 22px;
+}
+.burgerMenu span:nth-child(3) {
+  top: 34px;
+}
+
+.burgerMenu.active span:nth-child(1) {
+  top: 26px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.burgerMenu.active span:nth-child(2) {
+  opacity: 0;
+}
+.burgerMenu.active span:nth-child(3) {
+  top: 26px;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.mobileMenu {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: -10px;
+  left: 0;
+  z-index: 1;
+  width: calc(100vw - 20px);
+  padding-top: 80px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: auto;
+  background-color: var(--white);
+}
+.mobileMenu:not(.active) {
+  display: none;
+}
+
+.mobileMenu p {
+  margin-bottom: 30px;
+  margin-left: 20px;
+  color: var(--blue);
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+}
+.mobileMenu a {
+  color: var(--dark);
+  margin-bottom: 30px;
+  margin-left: 20px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+}
+#mobileMenuButtons button {
+  width: 100%;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+#navLinks {
+  display: none;
+}
+.navLink {
+  color: var(--dark);
+}
+#navRight button {
+  display: none;
+}
+#navLeft {
+  margin-left: -10px;
+  padding-left: 20px;
+  padding-right: 30px;
+  min-width: 0px;
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--white);
+  border-radius: 0 40px 40px 0;
+  height: 100%;
+  align-items: center;
+}
+#getInTouch {
+  color: var(--dark);
+  font-weight: 400;
+}
+@media screen and (min-width: 768px) {
+  nav {
+    /* width: calc(100vw - 40px); */
+    padding: 0 20px;
+    top: 20px;
+  }
+  #menuIcons {
+    display: none;
+  }
+  #navLinks {
+    display: none;
+  }
+  #navRight button {
+    display: block;
+  }
+  #navRight {
+    display: flex;
+    gap: 10px;
+  }
+  #navLeft {
+    margin-left: -20px;
+    padding-left: 40px;
+    padding-right: 30px;
+    min-width: 0px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  nav {
+    padding: 0 40px;
+    top: 20px;
+    /* width: 100%; */
+  }
+  #navLinks {
+    margin-left: auto;
+    display: flex;
+    gap: 50px;
+  }
+  #navRight {
+    display: flex;
+    gap: 0.5vw;
+  }
+  #navLeft {
+    margin-left: -80px;
+    padding-left: 88px;
+    display: flex;
+    justify-content: space-between;
+    width: 60vw;
+
+    background-color: var(--white);
+    border-radius: 0 40px 40px 0;
+    height: 100%;
+    align-items: center;
+
+    padding-right: 35px;
+  }
+  #getInTouch {
+    color: var(--dark);
+    font-weight: 400;
+  }
+}
+@media screen and (min-width: 1600px) {
+  nav {
+    padding: 0 80px;
+  }
+}
+#mobileMenuButtons > a.secButton {
+  width: 100%;
+  display: block;
+  margin: 0 10px 10px 0 !important;
+  padding: 15px 0 !important;
+}

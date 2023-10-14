@@ -1,0 +1,183 @@
+.pricing {
+  margin-top: 100px;
+}
+#pricingTopDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  grid-column: 1/-1;
+  margin-bottom: 20px;
+  text-align: left;
+}
+#procingTopDiv h2 {
+  display: inline;
+}
+#pricingTopDiv button {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: fit-content;
+}
+#pricingContent {
+  grid-column: 1/-1;
+  display: flex;
+  flex-direction: column;
+  gap: 65px;
+}
+.pricingLeft {
+  position: relative;
+  background: #ffffff;
+  mix-blend-mode: normal;
+  box-shadow: 0px 0px 20px rgba(57, 53, 216, 0.1);
+  border-radius: 30px;
+  padding: 40px;
+  padding-bottom: 125px;
+  width: 100%;
+}
+.pricingLeft button {
+  position: absolute;
+  bottom: 40px;
+  margin-left: auto;
+  width: fit-content;
+  left: 0;
+  right: 0;
+  margin-right: auto;
+}
+.pricingRight {
+  position: relative;
+  background-color: #3935d8;
+  mix-blend-mode: normal;
+  width: 100%;
+  box-shadow: 0px 0px 20px rgba(57, 53, 216, 0.1);
+  border-radius: 30px;
+  padding: 40px;
+  padding-bottom: 125px;
+  color: #fff;
+  position: relative;
+}
+#pricingBg {
+  pointer-events: none;
+  mix-blend-mode: color-burn;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  right: 0;
+  bottom: 0;
+  border-radius: 30px;
+  background: url(../media/mapBg.png);
+  background-position: bottom right;
+  background-repeat: no-repeat;
+}
+.pricingRight button {
+  position: absolute;
+  bottom: 40px;
+  margin-left: auto;
+  width: fit-content;
+  color: #3935d8;
+  font-weight: 600;
+  left: 0;
+  right: 0;
+  margin-right: auto;
+}
+.pricingLink {
+  margin-top: 12px;
+  color: #fff;
+  display: block;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  text-decoration: underline;
+}
+.pricingRight::after {
+  content: "We recommend";
+  position: absolute;
+  width: fit-content;
+  padding: 15px 30px;
+  border-radius: 40px;
+  margin: 0 auto;
+  top: -25px;
+  right: 0;
+  left: 0;
+  background: #2c2c2c;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+}
+.pricingTitle {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 27px;
+  margin-bottom: 20px;
+}
+.pricingListText {
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .pricingRight::after {
+    top: -25px;
+    right: 60px;
+    left: auto;
+  }
+  #pricingTopDiv button {
+    width: fit-content;
+  }
+  #pricingTopDiv {
+    gap: 10px;
+
+    margin-bottom: 60px;
+  }
+  .pricingLeft {
+    background: url(../media/mapBg.png);
+    background-position: bottom right;
+    background-repeat: no-repeat;
+  }
+  .pricingLeft button {
+    left: unset;
+    right: unset;
+  }
+  .pricingRight button {
+    left: unset;
+    right: unset;
+  }
+  #pricingTopDiv button {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .pricing {
+    margin-top: 160px;
+  }
+  #pricingContent {
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  #pricingTopDiv {
+    flex-direction: row;
+    gap: 40px;
+    margin-bottom: 80px;
+  }
+  #pricingTopDiv button {
+    align-self: center;
+  }
+  #pricingTopDiv a.secButton {
+    align-self: center;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .pricing {
+    margin-top: 200px;
+  }
+  #pricingTopDiv {
+    margin-bottom: 100px;
+  }
+}

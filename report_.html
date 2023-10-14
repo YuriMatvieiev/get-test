@@ -1,0 +1,997 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/favicon.ico" />
+    <title>
+      Location Insights with Comprehensive Location Reports for the whole UK
+    </title>
+    <meta
+      name="description"
+      content="Get valuable insights into customer behavior and foot traffic with Getplace.io's location reports. Our reports offer in-depth analysis and visualization of your business location data, enabling you to make informed decisions and optimize your business strategy"
+    />
+    <style data-styles="">
+      cookie-consent-banner {
+        visibility: hidden;
+      }
+    </style>
+
+    <link rel="stylesheet" href="./stylesMain/styles.css" />
+    <!-- <link rel="stylesheet" href="./styles/reports/styles.css?0.05" /> -->
+    <link rel="stylesheet" href="./styles/errors.css?0.01" />
+    <link rel="stylesheet" href="./styles/js-snackbar.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Krona+One&family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      type="module"
+      src="https://unpkg.com/@porscheofficial/cookie-consent-banner@2.1.0/dist/cookie-consent-banner/cookie-consent-banner.esm.js"
+    ></script>
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-8V22ZKDGG9"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-8V22ZKDGG9");
+    </script>
+
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-T6C3HGX");
+    </script>
+    <!-- End Google Tag Manager -->
+    <script type="text/javascript">
+      (function (f, b) {
+        if (!b.__SV) {
+          var e, g, i, h;
+          window.mixpanel = b;
+          b._i = [];
+          b.init = function (e, f, c) {
+            function g(a, d) {
+              var b = d.split(".");
+              2 == b.length && ((a = a[b[0]]), (d = b[1]));
+              a[d] = function () {
+                a.push([d].concat(Array.prototype.slice.call(arguments, 0)));
+              };
+            }
+            var a = b;
+            "undefined" !== typeof c ? (a = b[c] = []) : (c = "mixpanel");
+            a.people = a.people || [];
+            a.toString = function (a) {
+              var d = "mixpanel";
+              "mixpanel" !== c && (d += "." + c);
+              a || (d += " (stub)");
+              return d;
+            };
+            a.people.toString = function () {
+              return a.toString(1) + ".people (stub)";
+            };
+            i =
+              "disable time_event track track_pageview track_links track_forms track_with_groups add_group set_group remove_group register register_once alias unregister identify name_tag set_config reset opt_in_tracking opt_out_tracking has_opted_in_tracking has_opted_out_tracking clear_opt_in_out_tracking start_batch_senders people.set people.set_once people.unset people.increment people.append people.union people.track_charge people.clear_charges people.delete_user people.remove".split(
+                " "
+              );
+            for (h = 0; h < i.length; h++) g(a, i[h]);
+            var j = "set set_once union unset remove delete".split(" ");
+            a.get_group = function () {
+              function b(c) {
+                d[c] = function () {
+                  call2_args = arguments;
+                  call2 = [c].concat(Array.prototype.slice.call(call2_args, 0));
+                  a.push([e, call2]);
+                };
+              }
+              for (
+                var d = {},
+                  e = ["get_group"].concat(
+                    Array.prototype.slice.call(arguments, 0)
+                  ),
+                  c = 0;
+                c < j.length;
+                c++
+              )
+                b(j[c]);
+              return d;
+            };
+            b._i.push([e, f, c]);
+          };
+          b.__SV = 1.2;
+          e = f.createElement("script");
+          e.type = "text/javascript";
+          e.async = !0;
+          e.src =
+            "undefined" !== typeof MIXPANEL_CUSTOM_LIB_URL
+              ? MIXPANEL_CUSTOM_LIB_URL
+              : "file:" === f.location.protocol &&
+                "//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)
+              ? "https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js"
+              : "//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";
+          g = f.getElementsByTagName("script")[0];
+          g.parentNode.insertBefore(e, g);
+        }
+      })(document, window.mixpanel || []);
+    </script>
+    <script src="https://www.googleoptimize.com/optimize.js?id=OPT-T9FKZ2M"></script>
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-T6C3HGX"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <div id="gitBg"></div>
+
+    <div id="getInTouchWrapper">
+      <div id="gitClose">
+        <span id="gitCloseOne"></span>
+        <span></span>
+      </div>
+      <p class="h2">Get in touch</p>
+      <p class="paragraph" id="gitText">
+        Feel free to share your contact details and we will get back to you.
+      </p>
+
+      <p class="serviceText" id="gitFormTitle">
+        Enter contacts where to reach you:
+      </p>
+      <form action="" id="gitForm">
+        <input
+          class="gitInput serviceText"
+          type="text"
+          id="first_name"
+          placeholder="First Name"
+        />
+        <input
+          class="gitInput serviceText"
+          type="text"
+          id="last_name"
+          placeholder="Last Name"
+        />
+        <input
+          class="gitInput serviceText"
+          type="text"
+          id="company"
+          placeholder="Company Name"
+        />
+        <input
+          class="gitInput serviceText"
+          type="email"
+          id="email"
+          placeholder="Business E-mail"
+        />
+        <p class="supServiceText" id="gitUnderSubmitText">
+          By submitting, I accept the getplace.io
+          <a href="/privacy.html" target="_blank">Privacy Policy</a>.
+        </p>
+        <input
+          class="mainBtn"
+          id="gitSubmitBtn"
+          type="button"
+          value="Submit"
+          onclick="sendContact()"
+        />
+      </form>
+      <div class="form-form-group sent" id="contact-form-sent">
+        Message sent. We will contact you shortly.
+      </div>
+
+      <p id="gitMoreWays" class="paragraph">More ways to contact us:</p>
+      <div>
+        <div id="gitIcons">
+          <a href="mailto:info@getplace.io"
+            ><img src="./media/messageIconDark.svg" alt="message icon"
+          /></a>
+          <a
+            href="https://www.linkedin.com/company/getplace-io/"
+            target="_blank"
+            ><img src="./media/linkedinIconDark.svg" alt="linkedIn icon"
+          /></a>
+        </div>
+      </div>
+    </div>
+
+    <!--div id="getReportWrapper">
+  <div id="gitClose">
+    <span id="gitCloseOne"></span>
+    <span></span>
+  </div>
+  <p class="h2">Explore example</p>
+  <p class="paragraph" id="gitText">
+    Get to know how our reports look and work through an example for an address in London
+  </p>
+
+  <form action="" id="gitFormRep">
+    <input
+            class="gitInput serviceText"
+            type="text" id="full_name_contact"
+            placeholder="Full Name"
+    />
+    <input
+            class="gitInput serviceText"
+            type="email_contact" id="email_contact"
+            placeholder="Business E-mail"
+    />
+    <p class="supServiceText" id="gitUnderSubmitText">
+      By submitting, I accept the getplace.io <a href="/privacy.html" target="_blank">Privacy Policy</a>.
+    </p>
+    <input class="mainBtn" id="gitReportBtn" type="button" value="Go to report" onclick="sendReport()" />
+  </form>
+</div-->
+    <!-- DEMO POPUP -->
+    <div id="demoPopUpBg">
+      <div id="demoPopUp">
+        <div id="demoPopUpClose">
+          <img src="./media/close.svg" alt="close icon" />
+        </div>
+        <div id="demoPopUpContent">
+          <h3 id="demoPopUpTitle">Request a Demo</h3>
+          <p class="paragraph" id="demoPopUpText">
+            Feel free to share your contact details for us to show you the
+            capabilities of the Location Reports
+          </p>
+
+          <form id="demoPopUpForm">
+            <p id="demoPopUpFormText">Enter contacts where to reach you:</p>
+
+            <input
+              type="text"
+              name="fName"
+              id="fName"
+              placeholder="Full Name"
+            />
+            <input
+              type="text"
+              name="cName"
+              id="cName"
+              placeholder="Company name"
+            />
+            <input
+              type="email"
+              name="bEmail"
+              id="bEmail"
+              placeholder="Business E-mail"
+            />
+
+            <p id="demoPopUpBottomText" class="underSubmitText supServiceText">
+              By proceeding, I accept the getplace.io
+              <a href="/privacy.html" target="_blank">Privacy Policy.</a>
+            </p>
+            <input
+              type="button"
+              class="mainBtn"
+              value="Submit"
+              id="contactSubmit"
+              onclick="sendContact();"
+            />
+          </form>
+
+          <div id="demoPopUpSent">
+            Message sent. We will contact you shortly.
+          </div>
+
+          <div id="demoPopUpContact">
+            More ways to contact us:
+            <div id="demoPopUpIcons">
+              <a href="mailto:info@getplace.io"
+                ><img src="./media/messageIconDark.svg" alt="message icon"
+              /></a>
+              <a
+                href="https://www.linkedin.com/company/getplace-io/"
+                target="_blank"
+                ><img src="./media/linkedinIconDark.svg" alt="linkedIn icon"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!---- POPUP ----->
+    <div id="popUpBg">
+      <div id="popUp">
+        <div id="popUpClose">
+          <img src="./media/close.svg" alt="close icon" />
+        </div>
+        <div id="popUpContent">
+          <p id="popUpText">
+            Few clicks away from accessing the Footfall Heat Map and unlimited
+            Location Reports
+          </p>
+          <div id="sendform-errs" class="error-form"></div>
+          <form id="popUpForm">
+            <label for="fName">Full Name</label>
+            <input
+              type="text"
+              name="fName"
+              id="_fName"
+              placeholder="David Smith"
+            />
+            <label for="cName">Company name</label>
+            <input
+              type="text"
+              name="cName"
+              id="_cName"
+              placeholder="Burger Hero"
+            />
+            <label for="bEmail">Business E-mail</label>
+            <input
+              type="email"
+              name="bEmail"
+              id="_bEmail"
+              placeholder="email@restaurant.com"
+            />
+            <label for="password">Account Password</label>
+            <input
+              type="password"
+              name="password"
+              id="_password"
+              placeholder="At least 6 characters"
+            />
+            <input
+              type="submit"
+              class="mainBtn popUpButton"
+              value=""
+              id="popUpSubmit"
+            />
+          </form>
+          <p class="supServiceText popUpBottomText" id="underSubmitText">
+            By proceeding, I accept the getplace.io
+            <a href="/privacy.html" class="bottomText" target="_blank"
+              >Privacy Policy</a
+            >.
+          </p>
+        </div>
+      </div>
+    </div>
+    <nav>
+      <div id="navLeft">
+        <a href="https://getplace.io" id="navLogo">getplace.io</a>
+        <div id="navLinks" class="paragraph">
+          <a class="navLink" href="#useCases">How to Use</a>
+          <a class="navLink" href="#pricing">Pricing</a>
+          <a class="navLink" href="#reportData">Report Data</a>
+          <a class="navLink" href="#locationReports">Heat Map</a>
+        </div>
+      </div>
+      <div id="navRight">
+        <!--button id="getReport" class="secButton exploreTop">Explore free example online</button-->
+        <a class="secButton exploreTop requestDemo" target="_blank" href="https://calendly.com/denis_getplace">
+          Request a Demo
+        </a>
+        <a
+          class="secButton exploreTop"
+          id="getInTouch"
+          href="https://app.getplace.io/login"
+          rel="nofollow"
+        >
+          Log In
+        </a>
+        <div class="burgerMenu" id="burgerMenu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+
+      <div class="mobileMenu" id="mobileMenu">
+        <p class="serviceText">Menu:</p>
+        <a class="navLink" href="#useCases">How to Use</a>
+        <a class="navLink" href="#pricing">Pricing</a>
+        <a class="navLink" href="#reportData">Report Data</a>
+        <a class="navLink" href="#locationReports">Heat Map</a>
+        <div id="mobileMenuButtons">
+          <button class="mainBtn">Get personal report for £15</button>
+          <button class="secButton requestDemo">
+            <span class="bold">Request a Demo</span>
+          </button>
+          <a
+            class="secButton"
+            id="getInTouch"
+            href="https://app.getplace.io/login"
+            rel="nofollow"
+          >
+            Log in
+          </a>
+        </div>
+        <div id="menuIcons">
+          <a href="mailto:info@getplace.io"
+            ><img src="./media/messageIconDark.svg" alt="message icon"
+          /></a>
+          <a><img src="./media/whatsappIconDark.svg" alt="whatsApp icon" /></a>
+          <a><img src="./media/phoneIconDark.svg" alt="phone icon" /></a>
+          <a
+            href="https://www.linkedin.com/company/getplace-io/"
+            target="_blank"
+            ><img src="./media/linkedinIconDark.svg" alt="linkedIn icon"
+          /></a>
+        </div>
+      </div>
+    </nav>
+
+    <section class="hero" id="hero">
+      <div id="heroBg"></div>
+      <div class="h2" id="heroDescription">
+        Get to know the location for your next site with the getplace.io
+      </div>
+      <h1 class="h1 blueSpan" id="heroTitle">Location Reports</h1>
+      <img id="heroImage" src="media/mainHeroImg.png" alt="hero map" />
+      <div id="heroAvailable">
+        <h3 class="h3 pin-icon">Available for the whole UK</h3>
+      </div>
+      <div id="heroButton" class="hOneColumn">
+        <!--button
+          class="mainBtn"
+          onclick="document.location.href='/report#pricing'"
+          id="heroMainButton"
+        >
+          Get unlimited reports for £100
+        </button-->
+
+        <button
+          class="mainBtn requestDemoButton"
+          id="heroSecButton2"
+          onclick="window.location.href='/report#cta';"
+        >
+          Get 1 report for £15
+        </button>
+        <a class="link" href="/sources.html" target="_blank"
+          >Learn about data</a
+        >
+      </div>
+    </section>
+    <section class="useCases grid" id="useCases">
+      <h2 class="h1" id="useCasesTitle">The getplace.io report is
+        a time-saving one-stop shop with consolidated data and location insights
+      </h2>
+
+      <div id="htuContent">
+        <div id="htuVideoWrapper">
+          <!--iframe
+            class="responsive-iframe"
+            width="100%"
+            height="100%"
+            src="https://www.youtube.com/embed/HKhcd5EFXKA"
+          >
+          </iframe-->
+          <iframe
+            class="responsive-iframe"
+            width="100%"
+            height="100%"
+            src="https://www.youtube.com/embed/C_Ci5kdkFoM"
+          >
+          </iframe>
+        </div>
+        <div id="stepsAndButton">
+          <div id="htuStepsWrapper">
+            <div class="step">
+              <img src="./media/Pin.svg" alt="pin icon" class="pin" />
+              <p class="paragraph">
+                Check if the surroundings of the location suit your business.
+              </p>
+            </div>
+            <div class="step">
+              <img src="./media/Pin.svg" alt="pin icon" class="pin" />
+
+              <p class="paragraph">
+                Save time and reduce risk by making informed decisions.
+              </p>
+            </div>
+            <div class="step">
+              <img src="./media/Pin.svg" alt="pin icon" class="pin" />
+
+              <p class="paragraph">
+                Compare alternate locations and ensure a quick return on
+                investment.
+              </p>
+            </div>
+          </div>
+          <a href="#cta" class="greyButton" id="useCasesButton"
+            >Get report for 1 location</a
+          >
+        </div>
+      </div>
+    </section>
+    <section class="grid pricing" id="pricing">
+      <div id="pricingTopDiv">
+        <h3 class="h1">Choose the plan</h3>
+        <a
+          class="secButton requestDemoButton reportExample"
+          href="https://app.getplace.io/location-report/cWX9Ln"
+          onClick="trackHref(event, 'https://app.getplace.io/location-report/cWX9Ln', 'Plan', true)"
+          target="_blank"
+        >
+          View example report
+        </a>
+      </div>
+
+      <div id="pricingContent">
+        <div class="pricingLeft">
+          <p class="pricingTitle">Getplace.io Unlimited Location Reports</p>
+          <ul class="paragraph">
+            <p class="pricingListTex">
+              Monthly subscription with
+              <span class="bold">unlimited access to</span> reports with data
+              on:
+            </p>
+            <li>Pedestrian and vehicle traffic</li>
+            <li>Demographics of residents</li>
+            <li>Amenities around location</li>
+            <li>Closest competitors and their reviews</li>
+          </ul>
+          <button class="mainBtn" id="reportsOnly">Reports only | £100</button>
+        </div>
+        <div class="pricingRight">
+          <div id="pricingBg"></div>
+          <p class="pricingTitle paragraph">
+            Getplace.io Footfall Heat Map + Location Reports
+          </p>
+          <ul class="paragraph">
+            <p class="pricingListText">
+              Same as Reports subscription with
+              <span class="bold">additional access to:</span>
+            </p>
+            <li>Review of footfall patterns in the prominent neighbourhoods</li>
+            <li>Comparison of footfall between locations</li>
+            <li>Finding the site with the right traffic</li>
+          </ul>
+          <a class="pricingLink" href="/heatmap"
+            >Learn more about Footfall Heat Map</a
+          >
+          <button class="secButton" id="heatMapAndReports">
+            Heat Map + Reports £250
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="reportData grid" id="reportData">
+      <h2 class="h1" id="reportDataTitle">
+        Discover Location Insights
+      </h2>
+
+      <div id="footfall">
+        <div>
+          <h3 class="h2 pin-icon">Footfall & Vehicle Traffic</h3>
+          <p class="paragraph dataParagraph">
+            Number of people walking and driving by the location
+          </p>
+        </div>
+        <!--button id="getReport" class="secButton takeALook">Take a look</button-->
+      </div>
+      <!--button id="getReport" class="secButton takeALookTablet">Take a look</button-->
+
+      <div id="footfallSideText">
+        <ul class="paragraph">
+          <li>How many people walk by the potential location?</li>
+          <li>How many cars drive by it?</li>
+          <li>
+            What is the distribution of traffic throughout the workday? Weekend?
+            Week? Month?
+          </li>
+          <p class="paragraph sideTextParagraph">
+            Knowing the footfall and vehicle traffic is the key to estimating
+            the number of people who could potentially be exposed to the brand
+            and making revenue predictions.
+          </p>
+        </ul>
+      </div>
+      <img src="./media/dataImg.jpg" id="dataImg" alt="" />
+      <!--button id="getReport" class="secButton takeALookMobile">Take a look</button-->
+
+      <div class="margin100"></div>
+
+      <div id="demographic">
+        <h3 class="h2 pin-icon">Demographics</h3>
+        <p class="paragraph">
+          Age, gender, relationship status, household income, and more
+        </p>
+      </div>
+      <!--button id="getReport" class="secButton takeALookTablet">Take a look</button-->
+      <a
+        href="https://app.getplace.io/location-report/cWX9Ln#demographic"
+        class="secButton takeALookTablet reportExample"
+        target="_blank"
+        rel="nofollow"
+        onclick="trackHref(event, 'https://app.getplace.io/location-report/cWX9Ln#demographic', 'Contents', true)"
+      >Take a look</a
+      >
+      <img src="./media/Demogr-min.jpg" id="demographicImg" alt="" />
+      <div id="demographicSideText">
+        <ul class="paragraph">
+          <li>Who are the people living and working around that location?</li>
+          <li>Do they fit my target audience?</li>
+          <li>
+            How many people are there within a 100 yards radius? 500? 1000?
+          </li>
+        </ul>
+        <p class="paragraph sideTextParagraph">
+          Demographic data will help you make sure that there is a sufficient
+          pool of potential customers around the target location. We bridge
+          multiple sources of data and collate it all in one place.
+        </p>
+        <!--button id="getReport" class="secButton takeALook">Take a look</button-->
+        <!--button id="getReport" class="secButton takeALookMobile">Take a look</button-->
+        <a
+          href="https://app.getplace.io/location-report/cWX9Ln#demographic"
+          class="secButton takeALook reportExample"
+          target="_blank"
+          rel="nofollow"
+          onclick="trackHref(event, 'https://app.getplace.io/location-report/cWX9Ln#demographic', 'Contents', true)"
+        >Take a look</a
+        >
+        <a
+          href="https://app.getplace.io/location-report/cWX9Ln#demographic"
+          class="secButton takeALookMobile reportExample"
+          target="_blank"
+          rel="nofollow"
+          onclick="trackHref(event, 'https://app.getplace.io/location-report/cWX9Ln#demographic', 'Contents', true)"
+        >Take a look</a
+        >
+      </div>
+      <div class="margin100"></div>
+
+      <div id="amenities">
+        <h3 class="h2 pin-icon">Amenities</h3>
+        <p class="paragraph dataParagraph">
+          Accessibility of the location and points of interest
+        </p>
+      </div>
+      <!--button id="getReport" class="secButton takeALookTablet">Take a look</button-->
+
+      <img
+        src="./media/Ameni-min.jpg"
+        alt="Amenities image"
+        id="amenitiesImg"
+      />
+      <div id="amentitiesSideText">
+        <ul class="paragraph">
+          <li>How accessible is the location?</li>
+          <li>What kind of supermarkets and groceries stores are nearby?</li>
+          <li>
+            Are there any educational facilities nearby, such as nurseries,
+            schools, or universities?
+          </li>
+          <p class="paragraph sideTextParagraph">
+            Knowing amenities around your location will help understand which
+            kinds of people are going to be visiting these places and how best
+            to position your establishment to be visible to them.
+          </p>
+          <!--button id="getReport" class="secButton takeALookMobile">Take a look</button-->
+        </ul>
+
+        <!--button id="getReport" class="secButton takeALook">Take a look</button-->
+      </div>
+      <div class="margin100"></div>
+      <div id="competitors">
+        <h3 class="h2 pin-icon">Competitors</h3>
+        <p class="paragraph dataParagraph" id="competitorsParagraph">
+          Competitors, their type, distance from location, rating, number of
+          reviews, and more
+        </p>
+      </div>
+
+      <!--button id="getReport" class="secButton takeALookTablet">Take a look</button-->
+      <a
+        href="https://app.getplace.io/location-report/cWX9Ln#competitors"
+        class="secButton takeALookTablet reportExample"
+        target="_blank"
+        rel="nofollow"
+        onclick="trackHref(event, 'https://app.getplace.io/location-report/cWX9Ln#competitors', 'Contents', true)"
+      >Take a look</a
+      >
+
+      <div id="competitorsSideTextMobile">
+        <ul class="paragraph">
+          <li>What competition will my business have to face?</li>
+          <li>What do their customers think about them?</li>
+          <li>Are the big brands there?</li>
+          <li>
+            Are there enough competitors around to drive people to that
+            location?
+          </li>
+          <p class="paragraph sideTextParagraph">
+            Competitive analysis will help to paint a clear picture of the
+            surroundings, understand what makes this location tick and identify
+            hidden opportunities.
+          </p>
+        </ul>
+      </div>
+      <!--button id="getReport" class="secButton takeALookMobile">Take a look</button-->
+      <a
+        href="https://app.getplace.io/location-report/cWX9Ln#competitors"
+        class="secButton takeALookMobile reportExample"
+        target="_blank"
+        onclick="trackHref(event, 'https://app.getplace.io/location-report/cWX9Ln#competitors', 'Contents', true)"
+        rel="nofollow"
+        >Take a look</a
+      >
+      <img
+        src="./media/competitorsImg.jpg"
+        alt="Competitors Img"
+        id="competitorsImg"
+      />
+      <div id="competitorsSideText">
+        <ul class="paragraph">
+          <li>What competition will I have to face?</li>
+          <li>What do their customers think about them?</li>
+          <li>Are the big brands there?</li>
+          <li>
+            Are there enough competitors around to drive people to that
+            location?
+          </li>
+          <p class="paragraph sideTextParagraph">
+            Competitive analysis will help paint a clear picture of the
+            surroundings, understand what makes this location tick and identify
+            hidden opportunities.
+          </p>
+        </ul>
+
+        <!--button id="getReport" class="secButton takeALook">Take a look</button-->
+        <a
+          href="https://app.getplace.io/location-report/cWX9Ln#competitors"
+          class="secButton takeALook reportExample"
+          target="_blank"
+          rel="nofollow"
+          onclick="trackHref(event, 'https://app.getplace.io/location-report/cWX9Ln#competitors', 'Contents', true)"
+        >Take a look</a
+        >
+      </div>
+      <!-- <div class="margin100"></div> -->
+      <!-- <div class="margin100"></div>
+      <div id="bottomButtonWrapper">
+        <a href="#order" class="mainBtn" id="reportDataBottomBtn">
+          Get personal report for £15
+        </a>
+      </div> -->
+
+      <!-- <h2 class="h2" id="reportDataBottomText">
+        Get to know the location right on the spot with the
+        <span class="blueSpan">getplace.io</span> report
+      </h2>
+      <a
+        href="#order"
+        class="mainBtn reportDataBottomBtnTablet"
+        id="reportDataBottomBtnTablet"
+      >
+        Get personal report for £15
+      </a>
+      <img src="./media/Map left.png" alt="bg map left" id="bgMapLeft" /> -->
+    </section>
+
+    <section class="cta grid" id="cta">
+      <h2 class="h1" id="ctaTitle">Try one-click location check</h2>
+
+      <div id="bottomFormWrapper">
+        <p class="description" id="ctaDescription">
+          Enter your potential location and get a personal report immediately
+          following receipt of payment:
+        </p>
+        <form id="heroForm">
+          <label for="geocoder2" class="serviceTextBold formText">
+            Enter the address you want to inspect:
+          </label>
+          <!-- <input
+            type="text"
+            class="serviceText"
+            placeholder="Address"
+            id="addressInput"
+          /> -->
+          <div class="geo" id="geocoder2"></div>
+          <label class="serviceTextBold formText" id="topLabel">
+            Enter the contact to receive the report:
+          </label>
+          <label class="supServiceText" for="geocoder2_name" id="nameLabel"
+            >Recipient’s Full Name</label
+          >
+          <label
+            class="supServiceText"
+            for="geocoder2_company"
+            id="companyLabel"
+            >Company Name</label
+          >
+          <input
+            type="text"
+            class="serviceText nameInput"
+            placeholder="Recipient's Full Name"
+            id="geocoder2_name"
+          />
+          <label class="supServiceText" for="" id="companyLabelMobile"
+            >Company Name</label
+          >
+          <input
+            type="text"
+            class="serviceText companyInput"
+            placeholder="Company name"
+            id="geocoder2_company"
+          />
+          <label class="supServiceText" for="geocoder2_email" id="emailLabel"
+            >Business E-mail</label
+          >
+          <input
+            type="email"
+            class="serviceText"
+            placeholder="Business E-mail"
+            id="geocoder2_email"
+          />
+          <div id="ctaBottomWrapper">
+            <div id="ctaButtonsWrapper">
+              <input
+                class="greyButton"
+                id="ctaSubmit"
+                type="button"
+                value="Get personal report for £15"
+                onclick="sendForm('geocoder2')"
+              />
+              <a
+                class="secButton reportExample"
+                id="ctaSecBtn"
+                href="https://app.getplace.io/location-report/cWX9Ln"
+                target="_blank"
+                rel="nofollow"
+                onClick="trackHref(event, 'https://app.getplace.io/location-report/cWX9Ln', 'Form', true)"
+              >
+                View example report
+              </a>
+            </div>
+            <p id="underSubmitText" class="supServiceText fixedWidth">
+              By proceeding, I accept the getplace.io
+              <a href="/privacy.html" target="_blank">Privacy Policy</a>.
+            </p>
+          </div>
+        </form>
+      </div>
+      <div id="ctaImg"></div>
+      <div
+        src="./media/bottomImage.jpg"
+        alt="cta image"
+        id="ctaImgMobile"
+      ></div>
+    </section>
+    <section class="grid locationReports" id="locationReports">
+      <h3 class="h2" id="locationSubTitle">
+        Explore more Getplace.io products
+      </h3>
+      <h2 class="h1" id="locationTitle">Footfall Heat Map</h2>
+      <div id="locationVideoWrapper">
+        <iframe
+          class="responsive-iframe"
+          width="100%"
+          height="100%"
+          src="https://www.youtube.com/embed/Lu4nNc0gijg"
+        >
+        </iframe>
+      </div>
+      <div id="locationText">
+        <p class="paragraph">Select any point on the map to learn about it</p>
+        <ul id="locationUl" class="paragraph">
+          <li>Review of footfall patterns in the prominent neighbourhoods</li>
+          <li>Comparison of footfall between locations</li>
+          <li>Finding the site with the right traffic</li>
+        </ul>
+        <div id="locationBtnDesctop">
+          <button class="secButton" id="heatMapOnly">
+            Heat Map only | £200
+          </button>
+          <a class="serviceText underline" href="/heatmap"
+            >Learn more about Footfall Heat Map</a
+          >
+        </div>
+      </div>
+      <button class="secButton" id="locationButton">
+        Heat Map only | £200
+      </button>
+      <a
+        class="serviceText underline"
+        href="/heatmap"
+        id="locationLink"
+        target="_blank"
+        >Learn more about Footfall Heat Map</a
+      >
+    </section>
+    <footer id="footer" class="grid">
+      <a href="/" id="footerLogo" class="descriptionBold">getplace.io</a>
+      <div id="footerLinks" class="paragraph">
+        <a class="footerLink" href="/blog">Blog</a>
+        <a class="footerLink" href="/heatmap">Heat Map</a>
+      </div>
+      <div id="footerIcons">
+        <a href="mailto:info@getplace.io"
+          ><img src="./media/messageIcon.svg" alt="Email Message Icon"
+        /></a>
+        <a href="https://www.linkedin.com/company/getplace-io/" target="_blank"
+          ><img src="./media/linkedinIcon.svg" alt="LinkedIn Icon"
+        /></a>
+      </div>
+      <div class="h2" id="footerText">
+        We measure the offline world to help businesses make right strategic
+        decisions.
+      </div>
+      <div id="gdprWrapper">
+        <img src="./media/GDPR.png" alt="GDPR Compliance Badge" id="gdpr" />
+      </div>
+
+      <div id="footerBottom" class="supServiceText">
+        <a class="footerBottomLink" href="mailto:info@getplace.io"
+          >info@getplace.io</a
+        >
+        <a class="footerBottomLink" href="/sources.html" target="_blank"
+          >Data Sources</a
+        >
+        <a class="footerBottomLink" href="/privacy.html" target="_blank"
+          >Privacy Policy</a
+        >
+        <!--a class="footerBottomLink" href="">Public Offer</a-->
+        <p class="footerBottomLink">© 2023</p>
+      </div>
+    </footer>
+
+    <cookie-consent-banner
+      btn-label-accept-and-continue="Agree and continue"
+      btn-label-only-essential-and-continue="Continue with technically required cookies only"
+      btn-label-persist-selection-and-continue="Save selection and continue"
+      btn-label-select-all-and-continue="Select all and continue"
+      content-settings-description="You can decide which cookies are used by selecting the respective options below. Please note that your selection may impair in the functionality of the service."
+      class="cc-text"
+    >
+      We use cookies and similar technologies to provide certain features,
+      enhance the user experience and deliver content that is relevant to your
+      interests. Depending on their purpose, analysis and marketing cookies may
+      be used in addition to technically necessary cookies. By clicking on
+      "Agree and continue", you declare your consent to the use of the
+      aforementioned cookies.
+      <a
+        href="javascript:document.dispatchEvent(new Event('cookie_consent_details_show'))"
+      >
+        Here</a
+      >
+      you can make detailed settings or revoke your consent (in part if
+      necessary) with effect for the future. For further information, please
+      refer to our
+      <a href="/privacy.html" target="_blank">Privacy Policy</a>.
+    </cookie-consent-banner>
+
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v2.12.0/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/h3-js"></script>
+
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.12.0/mapbox-gl.js"></script>
+    <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.0/mapbox-gl-geocoder.min.js"></script>
+    <script src="js-snackbar.min.js"></script>
+    <script src="errors.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.0/mapbox-gl-geocoder.css"
+      type="text/css"
+    />
+    <script src="./main.js?0.12"></script>
+    <script src="./navbar.js?0.01"></script>
+  </body>
+</html>

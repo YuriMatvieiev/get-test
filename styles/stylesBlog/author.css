@@ -1,0 +1,231 @@
+.teamMember {
+  position: relative;
+  grid-column: 1/-1;
+}
+
+.author-name {
+  grid-column: 1/-1;
+}
+.postsBy {
+  grid-column: 1/-1;
+}
+.mySwiper {
+  grid-column: 1/-1;
+  width: 100%;
+}
+.swiper-slide {
+  padding: 20px 50px;
+  max-width: 600px;
+}
+
+.teamFlexBox {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+.teamImageWrapper {
+  width: 100%;
+  margin-top: 8px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #86b6f521;
+}
+.teamImageWrapper img {
+  width: 100%;
+  max-width: 585px;
+  height: auto;
+}
+.teamLinkedIn {
+  position: absolute;
+  display: block;
+  width: fit-content;
+  height: fit-content;
+  bottom: 20px;
+  left: 20px;
+}
+.teamLinkedIn img {
+  width: 30px;
+  height: 30px;
+}
+
+.teamName {
+  font-family: "Krona One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  color: var(--black);
+}
+.teamMainExpertise {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.teamBackground {
+  display: block;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.teamBackgroundTablet {
+  display: none;
+}
+
+.teamCompany {
+  text-align: left;
+}
+.teamBackgroundText {
+  margin-bottom: 10px;
+}
+.teamDescriptionFlex {
+  display: flex;
+  flex-direction: column;
+}
+
+.teamLeftBox {
+  width: 100%;
+}
+.teamRightBox {
+  width: 100%;
+  position: relative;
+}
+.teamUnderline {
+  width: auto;
+  display: block;
+  border-bottom: 1px solid #2c2c2c;
+  opacity: 0.4;
+  order: 1;
+}
+
+@media screen and (min-width: 768px) {
+  .teamFlexBox {
+    gap: 30px;
+    flex-direction: row;
+  }
+  .teamLeftBox {
+    width: 60%;
+  }
+  .teamRightBox {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .teamFlexBox img {
+    margin-top: 0px;
+  }
+
+  .teamLinkedIn img {
+    width: 45px;
+    height: 45px;
+  }
+
+  .teamName {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 38px;
+  }
+  .teamMainExpertise {
+    margin-top: 40px;
+  }
+  .teamBackground {
+    display: none;
+    margin-top: 30px;
+    flex-direction: column;
+    gap: 17px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+  }
+  .teamBackgroundTablet {
+    display: flex;
+    margin-top: 30px;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 17px;
+    width: 100%;
+    bottom: 0;
+  }
+  .teamBackgroundText {
+    margin-bottom: 3px;
+  }
+
+  .teamDescriptionFlex {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+  }
+
+  .teamUnderline {
+    width: 100%;
+    flex-basis: auto;
+
+    border-bottom: 1px solid #2c2c2c;
+    opacity: 0.4;
+    order: 0;
+  }
+  .teamCompany {
+    text-align: right;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .teamBackgroundTablet {
+    display: none;
+  }
+  .teamFlexBox {
+    gap: 30px;
+    flex-direction: row;
+  }
+  .teamFlexBox img {
+    margin-top: 0px;
+  }
+
+  .teamName {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 38px;
+  }
+  .teamMainExpertise {
+    margin-top: 40px;
+  }
+  .teamBackground {
+    display: block;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+  }
+  .teamBackgroundText {
+    margin-bottom: 3px;
+  }
+
+  .teamDescriptionFlex {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+  }
+
+  .teamUnderline {
+    width: 100%;
+    flex-basis: auto;
+
+    border-bottom: 1px solid #2c2c2c;
+    opacity: 0.4;
+    order: 0;
+  }
+  .teamCompany {
+    text-align: right;
+  }
+  .teamLeftBox {
+    width: 100%;
+  }
+  .teamRightBox {
+    width: 100%;
+    display: block;
+  }
+}

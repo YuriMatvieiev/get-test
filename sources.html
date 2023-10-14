@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/favicon.ico" />
+    <title>Sources - Getplace.io</title>
+    <meta
+      name="description"
+      content="Getplace.io is dedicated to providing high-quality and reliable location analytics data. Check out our Data Source FAQ page to learn more about where our data comes from and how we ensure its accuracy"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./styles/errors.css" />
+    <link rel="stylesheet" href="./styles/js-snackbar.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Krona+One&family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Google tag (gtag.js) -->
+    <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-8V22ZKDGG9"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-8V22ZKDGG9");
+    </script>
+
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-T6C3HGX");
+    </script>
+    <!-- End Google Tag Manager -->
+    <link href="https://getplace.io/sources.html" rel="canonical">
+
+    <!-- Meta Pixel Code -->
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+              n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+              'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '353252573798331');
+      fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+                   src="https://www.facebook.com/tr?id=353252573798331&ev=PageView&noscript=1"
+    /></noscript>
+
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-T6C3HGX"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <div id="gitBg"></div>
+    <div id="getInTouchWrapper">
+      <div id="gitClose">
+        <span id="gitCloseOne"></span>
+        <span></span>
+      </div>
+      <p class="paragraph" class="h2">Get in touch</p>
+      <p class="paragraph" class="paragraph" id="gitText">
+        Feel free to share your contact details and we will get back to you.
+      </p>
+
+      <p class="paragraph" class="serviceText" id="gitFormTitle">
+        Enter contacts where to reach you:
+      </p>
+
+      <form action="" id="gitForm">
+        <div class="error-form" id="sendcontact-errs"></div>
+        <input
+          class="gitInput serviceText"
+          type="text"
+          id="first_name"
+          placeholder="First Name"
+        />
+        <input
+          class="gitInput serviceText"
+          type="text"
+          id="last_name"
+          placeholder="Last Name"
+        />
+        <input
+          class="gitInput serviceText"
+          type="text"
+          id="company"
+          placeholder="Company name"
+        />
+        <input
+          class="gitInput serviceText"
+          type="email"
+          id="email"
+          placeholder="Business E-mail"
+        />
+        <p class="paragraph" class="supServiceText" id="gitUnderSubmitText">
+          By submitting, I accept the getplace.io
+          <a href="/privacy.html" target="_blank">Privacy Policy</a>.
+        </p>
+        <input
+          class="mainBtn"
+          id="gitSubmitBtn"
+          type="button"
+          value="Submit"
+          onclick="sendContact()"
+        />
+      </form>
+      <div class="form-form-group sent" id="contact-form-sent">
+        Message sent. We will contact you shortly.
+      </div>
+
+      <p class="paragraph" id="gitMoreWays" class="paragraph">
+        More ways to contact us:
+      </p>
+      <div>
+        <div id="gitIcons">
+          <a href="mailto:info@getplace.io" rel="nofollow"
+            ><img src="./media/messageIconDark.svg" alt="message icon"
+          /></a>
+          <a><img src="./media/whatsappIconDark.svg" alt="whatsApp icon" /></a>
+          <a><img src="./media/phoneIconDark.svg" alt="phone icon" /></a>
+          <a
+            href="https://www.linkedin.com/company/getplace-io/"
+            target="_blank" rel="nofollow"
+            ><img src="./media/linkedinIconDark.svg" alt="linkedIn icon"
+          /></a>
+        </div>
+      </div>
+    </div>
+
+    <!--div id="getReportWrapper">
+        <div id="gitClose">
+          <span id="gitCloseOne"></span>
+          <span></span>
+        </div>
+        <p class="h2">Explore example</p>
+        <p class="paragraph" id="gitText">
+          Get to know how our reports look and work through an example for an address in London
+        </p>
+        
+        <form action="" id="gitFormRep">
+          <input
+                  class="gitInput serviceText"
+                  type="text" id="full_name_contact"
+                  placeholder="Full Name" 
+          />
+          <input
+                  class="gitInput serviceText"
+                  type="email_contact" id="email_contact"
+                  placeholder="Business E-mail"
+          />
+          <p class="supServiceText" id="gitUnderSubmitText">
+            By submitting, I accept the getplace.io <a href="/privacy.html" target="_blank">Privacy Policy</a>.
+          </p>
+          <input class="mainBtn" id="gitReportBtn" type="button" value="Go to report" onclick="sendReport()" />
+        </form>
+    </div-->
+
+    <nav>
+      <div id="navLeft">
+        <a href="https://getplace.io" id="navLogo" class="descriptionBold"
+          >getplace.io</a
+        >
+        <div id="navLinks" class="paragraph">
+          <a class="navLink" href="#useCases">Use Cases</a>
+          <a class="navLink" href="#reportData">Report Data</a>
+        </div>
+      </div>
+      <div id="navRight">
+        <a
+          href="https://app.getplace.io/location-report/cWX9Ln"
+          class="secButton exploreTop"
+          target="_blank"
+          rel="nofollow"
+          >Explore free example online</a
+        >
+        <!--button class="secButton" id="getReport">Explore free example online</button-->
+        <a class="secButton exploreTop" href="https://calendly.com/denis_getplace" target="_blank" id = "getInTouch" rel="nofollow">
+          Get in Touch
+        </a>
+        <div class="burgerMenu" id="burgerMenu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+
+      <div class="mobileMenu" id="mobileMenu">
+        <p class="paragraph" class="serviceText">Menu:</p>
+        <a class="paragraph" href="#useCases">Use Cases</a>
+        <a class="paragraph" href="#reportData">Report Data</a>
+        <div id="mobileMenuButtons">
+          <button class="mainBtn">Get personal report for £15</button>
+          <a
+            class="secButton"
+            id="getReport"
+            href="https://app.getplace.io/location-report/cWX9Ln"
+            rel="nofollow"
+          >
+            Explore free example online
+          </a>
+          <a href="https://calendly.com/denis_getplace" class="secButton requestDemoButton" id="getInTouch" target="_blank" rel="nofollow">
+            Get in Touch
+          </a>
+        </div>
+        <div id="menuIcons">
+          <a href="mailto:info@getplace.io" rel="nofollow"
+            ><img src="./media/messageIconDark.svg" alt="message icon"
+          /></a>
+          <a><img src="./media/whatsappIconDark.svg" alt="whatsApp icon" /></a>
+          <a><img src="./media/phoneIconDark.svg" alt="phone icon" /></a>
+          <a
+            href="https://www.linkedin.com/company/getplace-io/"
+            target="_blank" rel="nofollow"
+            ><img src="./media/linkedinIconDark.svg" alt="linkedIn icon"
+          /></a>
+        </div>
+      </div>
+    </nav>
+
+    <section class="sources" id="sources">
+      <h1 class="h1">Data Source FAQ</h1>
+      <div class="question-block">
+        <h2 class="h2 subtitle">
+          What is the data source for footfall and vehicle traffic?
+        </h2>
+        <p class="paragraph gap">
+          We have partnered with an aggregator of mobile apps, which has
+          developed an innovative dataset and approach to support a detailed
+          understanding of pedestrian and non-pedestrian movement modalities at
+          microgeographic levels. The key source of input data is SDK-sourced
+          GPS coordinates from almost 7 million mobile devices in the UK.
+        </p>
+        <p class="paragraph gap">
+          The mobile data is sourced from various apps representing various user
+          types to capture representative and robust coordinate data per unique
+          device that best reflects the population. The data is collected via
+          mobile applications installed on smartphones and opted in by users. If
+          the device has a specific app installed and location data collection
+          is enabled, then this data will be accessible.
+        </p>
+        <p class="paragraph gap">
+          The mobility data for the UK is sourced from 1000+ apps (Lifestyle,
+          Sports, Finance, Video Players, News/Magazines, Social Networking,
+          Entertainment/Games, Video Players, Communications, Tools, etc) and
+          provides raw data per unique device.
+        </p>
+      </div>
+      <div class="question-block">
+        <h2 class="h2 subtitle">Can this data be trusted?</h2>
+        <p class="paragraph gap">
+          To maintain the accuracy and representative robustness of the human
+          mobility data, a combination of elements is used:
+        </p>
+        <ul class="paragraph gap">
+          <li>Large data volumes (>2-8% of the mobile holding population);</li>
+          <li>Persistent user base;</li>
+          <li>Diverse range of mobile apps;</li>
+          <li>
+            High correlation with residential distribution compared to official
+            statistics, i.e. Census.
+          </li>
+        </ul>
+      </div>
+      <div class="question-block">
+        <h2 class="h2 subtitle">Does this data adhere to GDPR?</h2>
+        <p class="paragraph gap">
+          The data sets don’t contain User IDs, Phone Numbers, Emails,
+          Addresses, Names, or any Personally Identifiable Information. The data
+          sets do contain aggregated (Footfall) and abstract (Brand Affinities)
+          data derivatives and adhere to GDPR.
+        </p>
+      </div>
+      <div class="question-block">
+        <h2 class="h2 subtitle">What's the demographics data source?</h2>
+        <p class="paragraph gap">
+          We combine and enrich the data utilizing multiple sources:
+        </p>
+        <ul class="paragraph gap">
+          <li>
+            For age, ethnic makeup, religion, gender, and relationship status we
+            use the official
+            <a href="https://census.gov.uk/" target="_blank" rel="nofollow">Census 2021</a> and
+            <a href="https://www.ons.gov.uk/census/2011census" target="_blank" rel="nofollow"
+              >Census 2011</a
+            >
+            The census happens every 10 years and gives a picture of all the
+            people and households in England and Wales;
+          </li>
+          <li>
+            Our partner,
+            <a href="https://crystalroof.co.uk/" target="_blank" rel="nofollow">Crystal Roof</a
+            >, provides data on household income for the London locations. Their
+            proprietary algorithms model data to separately pinpoint household
+            income for every site;
+          </li>
+          <li>Diverse range of mobile apps</li>
+          <li>
+            For crime statistics, we get the data from our partner, Crystal
+            Roof, which they get from an official open database about crime and
+            policing in England, Wales, and Northern Ireland. The data is being
+            published on a monthly basis since January 2020.
+          </li>
+        </ul>
+      </div>
+      <div class="question-block">
+        <h2 class="h2 subtitle">What's the competitors data source?</h2>
+        <p class="paragraph gap">
+          We have partnered with
+          <a
+            href="https://developers.google.com/maps/documentation/places/web-service/details"
+            target="_blank" rel="nofollow"
+            >Google</a
+          >
+          to provide the most recent and accurate data on the competitors around
+          the chosen location.
+        </p>
+      </div>
+      <div class="question-block">
+        <h2 class="h2 subtitle">What's the amenities data source?</h2>
+        <p class="paragraph gap">
+          To provide the most recent and accurate information on points of
+          interest around the chosen location we cross-reference data from
+          open-source
+          <a
+            href="https://www.openstreetmap.org/#map=18/51.47583/-0.19292"
+            target="_blank" rel="nofollow"
+            >OpenStreetMap (OSM)</a
+          >
+          and
+          <a
+            href="https://developers.google.com/maps/documentation/places/web-service/details"
+            target="_blank" rel="nofollow"
+            >Google.</a
+          >
+        </p>
+      </div>
+    </section>
+
+    <footer id="footer" class="grid">
+      <a href="" id="footerLogo" class="descriptionBold">getplace.io</a>
+      <div id="footerLinks" class="paragraph gap">
+        <a class="footerLink" href="/#useCases">Use Cases</a>
+        <a class="footerLink" href="/#reportData">Report Data</a>
+      </div>
+      <div id="footerIcons">
+        <a href="mailto:info@getplace.io" rel="nofollow"
+          ><img src="./media/messageIcon.svg" alt="Email Message Icon"
+        /></a>
+        <a href="https://www.linkedin.com/company/getplace-io/" target="_blank" rel="nofollow"
+          ><img src="./media/linkedinIcon.svg" alt="LinkedIn Icon"
+        /></a>
+      </div>
+      <div class="h2" id="footerText">
+        We measure the offline world to help businesses make right strategic
+        decisions.
+      </div>
+      <div id="gdprWrapper">
+        <img src="./media/GDPR.png" alt="GDPR Compliance Badge" id="gdpr" />
+      </div>
+      <div id="footerBottom" class="supServiceText">
+        <a class="footerBottomLink" href="mailto:info@getplace.io" rel="nofollow"
+          >info@getplace.io</a
+        >
+        <a class="footerBottomLink" href="/sources.html">Data Sources</a>
+        <a class="footerBottomLink" href="/privacy.html">Privacy Policy</a>
+        <!--a class="footerBottomLink" href="">Public Offer</a-->
+        <p class="footerBottomLink">© 2023</p>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/h3-js"></script>
+    <script src="js-snackbar.min.js"></script>
+    <script src="errors.js"></script>
+    <script src="./sources.js?0.03"></script>
+  </body>
+</html>

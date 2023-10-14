@@ -1,0 +1,190 @@
+.hero {
+  position: relative;
+  margin-top: 80px;
+  overflow-x: hidden;
+}
+#heroImage {
+  position: absolute;
+  height: 100vw;
+  max-height: 375px;
+  width: auto;
+  right: -20%;
+  top: 85px;
+  z-index: -1;
+  filter: brightness(3);
+}
+#heroDescription {
+  grid-column: 1/-1;
+}
+
+#heroTitle {
+  margin-top: 10px;
+  margin-bottom: 160px;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  grid-column: 1 / 4;
+  color: #3935d8;
+}
+#heroBottom {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+#heroButton {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  /* order: 2; */
+  gap: 20px;
+}
+#heroButton a {
+  color: #3935d8;
+  text-decoration: underline;
+}
+#heroAvailable {
+  width: 70%;
+  /* order: 1; */
+}
+.pricing__slide-title img {
+  width: 20px !important;
+}
+.footer-icons a img {
+  width: 48px !important;
+  height: 48px !important;
+}
+.pin {
+  width: 20px !important;
+  height: 25px !important;
+}
+@media screen and (min-width: 415px) {
+  #heroImage {
+    top: 40px;
+    right: 10px;
+  }
+  .hero {
+    overflow-x: visible;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    margin-top: 150px;
+  }
+  #heroImage {
+    height: 100vw;
+    max-height: 100%;
+    right: 20px;
+    top: 0px;
+    margin-left: auto;
+    position: absolute;
+    /* top: 85px;
+        right: -65px; */
+    z-index: -1;
+  }
+  #heroDescription {
+    grid-column: 1/3;
+  }
+  #heroTitle {
+    margin-top: 20px;
+    margin-bottom: 100px;
+
+    grid-column: 1/4;
+  }
+  #heroBottom {
+    gap: 20px;
+    grid-column: 1/4;
+    max-width: 650px;
+  }
+  #heroButton {
+    width: fit-content;
+    grid-column: 1/3;
+    display: flex;
+    text-align: left;
+    flex-wrap: wrap;
+    flex-grow: 2;
+    order: 2;
+    gap: 20px;
+    /* width: fit-content; */
+  }
+  #heroButton a {
+    text-align: center;
+
+    align-self: center;
+    display: inline;
+    color: #3935d8;
+    text-decoration: underline;
+  }
+  #heroMainButton {
+    width: calc(50% - 15px);
+    order: 0;
+  }
+  #heroSecButton {
+    width: calc(50% - 15px);
+    order: 2;
+  }
+  /* #heroButton button {
+    width: fit-content;
+  } */
+  #heroAvailable {
+    grid-column: 1/3;
+    width: 100%;
+  }
+  .h2 {
+    font-size: 30px;
+    line-height: 38px;
+  }
+}
+@media screen and (min-width: 1145px) {
+  #heroTitle {
+    grid-column: 1 / 4;
+  }
+}
+@media screen and (min-width: 1280px) {
+  #heroImage {
+    max-height: 130%;
+    top: -80px;
+  }
+  #heroButton a {
+    text-align: center;
+    order: 2;
+    width: calc((100vw - 170px) / 4);
+  }
+  #heroMainButton {
+    width: calc((100vw - 170px) / 4);
+    order: 0;
+  }
+  #heroButton {
+    /* max-width: 900px; */
+    gap: 30px;
+  }
+  #heroSecButton {
+    width: fit-content;
+    order: 1;
+  }
+  #heroBottom {
+    grid-column: 1/-1;
+
+    max-width: none;
+  }
+  #heroAvailable {
+    margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .hero {
+    height: 150%;
+    max-height: 800px;
+  }
+  .h2 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+}
+
+.h2 {
+  font-family: "Krona One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+}

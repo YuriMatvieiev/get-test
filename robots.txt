@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /footfall
+Disallow: /footfall.html
+Allow: /
+Sitemap: /sitemap.xml

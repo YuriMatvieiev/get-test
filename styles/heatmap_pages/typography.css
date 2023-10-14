@@ -1,0 +1,83 @@
+h1 {
+  font-family: "Krona One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 38px;
+
+  color: #3935d8;
+}
+h2 {
+  font-family: "Krona One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 38px;
+}
+h3 {
+  font-family: "Krona One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+}
+p {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+}
+a {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+}
+.indent {
+  line-height: 120%;
+  text-indent: 30px;
+}
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 60px;
+    line-height: 75px;
+  }
+  h2 {
+    font-size: 60px;
+    line-height: 75px;
+  }
+  h3 {
+    font-size: 30px;
+    line-height: 38px;
+  }
+  p {
+    font-size: 18px;
+    line-height: 140%;
+  }
+  a {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  h1 {
+    font-size: 80px;
+    line-height: 100px;
+  }
+  h2 {
+    font-size: 80px;
+    line-height: 100px;
+  }
+  h3 {
+    font-size: 40px;
+    line-height: 140%;
+  }
+  p {
+    font-size: 20px;
+    line-height: 140%;
+  }
+}

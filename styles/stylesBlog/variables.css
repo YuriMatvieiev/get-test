@@ -1,0 +1,344 @@
+:root {
+  --white: #fff;
+  --blue: #3935d8;
+  --black: #2c2c2c;
+  --yellow: #ffc81d;
+  --white: #fff;
+  --blue: #3935d8;
+  --yellow: #ffc81d;
+  --main-shadow: 0px 0px 20px rgba(57, 53, 216, 0.1);
+  --page-padding: 10px;
+}
+
+h1 {
+  font-family: "Krona One";
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 38px;
+}
+h2 {
+  font-family: "Krona One";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
+}
+h3 {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 30px;
+}
+h4 {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+}
+p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+}
+.bold {
+  font-weight: 600;
+}
+.supText {
+  font-size: 14px;
+  line-height: 19px;
+  color: #ababab;
+}
+button {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+}
+input {
+  font-size: 18px;
+}
+.h1 {
+  font-family: "Krona One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 38px;
+}
+.h2 {
+  font-family: "Krona One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+}
+.h3 {
+  font-family: "Krona One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+}
+.descriptionBold {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 27px;
+}
+.descriptionBoldSm {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 30px;
+}
+.description {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+}
+.paragraph {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+}
+.serviceText {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+.supServiceText {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+}
+.serviceTextBold {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+@media (min-width: 768px) {
+  :root {
+    --page-padding: 20px;
+  }
+  h1 {
+    font-size: 60px;
+    line-height: normal;
+  }
+  h2 {
+    font-size: 30px;
+    line-height: 140%;
+  }
+  h3 {
+    font-size: 22px;
+    line-height: 30px;
+  }
+  h4 {
+    font-size: 22px;
+    line-height: 140%;
+  }
+  p {
+    font-size: 18px;
+    line-height: 140%;
+  }
+  .supText {
+    font-size: 14px;
+    line-height: 19px;
+  }
+  button {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .h1 {
+    font-size: 60px;
+    line-height: 75px;
+  }
+  .h2 {
+    font-size: 30px;
+    line-height: 38px;
+  }
+  .h3 {
+    font-family: "Krona One";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 120%;
+    /* or 36px */
+  }
+  .descriptionBold {
+    font-size: 26px;
+    line-height: 35px;
+  }
+  .description {
+    font-size: 22px;
+    line-height: 30px;
+  }
+  .paragraph {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .serviceText {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .supServiceText {
+    font-size: 14px;
+    line-height: 19px;
+  }
+  .serviceTextBold {
+    font-size: 18px;
+    line-height: 25px;
+  }
+}
+@media (min-width: 1280px) {
+  :root {
+    --page-padding: 40px;
+  }
+  .h1 {
+    font-family: "Krona One";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 4.21vw;
+    line-height: 75px;
+  }
+  .h2 {
+    font-family: "Krona One";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 38px;
+  }
+  .h3 {
+    font-family: "Krona One";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 120%;
+    /* identical to box height, or 36px */
+  }
+  .descriptionBold {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+  }
+  .descriptionBoldSm {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 30px;
+  }
+  .description {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+  }
+  .paragraph {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .serviceText {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .supServiceText {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+  }
+}
+@media (min-width: 1600px) {
+  :root {
+    --page-padding: 80px;
+  }
+  h1 {
+    font-size: 80px;
+    line-height: 100px;
+  }
+  h2 {
+    font-size: 40px;
+    line-height: 120%;
+  }
+  h3 {
+    font-size: 26px;
+    line-height: 35px;
+  }
+  h4 {
+    font-size: 26px;
+    line-height: 140%;
+  }
+  p {
+    font-size: 20px;
+    line-height: 140%;
+  }
+  .supText {
+    font-size: 14px;
+    line-height: 19px;
+  }
+  button {
+    font-size: 20px;
+    line-height: 27px;
+  }
+  input {
+    font-size: 20px;
+  }
+
+  .serviceTextBold {
+    font-size: 20px;
+    line-height: 27px;
+  }
+  .h1 {
+    font-size: 4.21vw;
+    line-height: 100px;
+  }
+  .h2 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .h3 {
+    font-family: "Krona One";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 120%;
+  }
+  .descriptionBold {
+    font-size: 26px;
+    line-height: 35px;
+  }
+  .description {
+    font-size: 26px;
+    line-height: 35px;
+  }
+  .paragraph {
+    font-size: 20px;
+    line-height: 27px;
+  }
+  .serviceText {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .supServiceText {
+    font-size: 14px;
+    line-height: 19px;
+  }
+}

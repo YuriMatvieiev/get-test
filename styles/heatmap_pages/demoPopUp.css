@@ -1,0 +1,202 @@
+#demoPopUpBg {
+  z-index: 4;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(57, 53, 216, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+#contactSubmit {
+  width: 100%;
+}
+#demoPopUpBg:not(.active) {
+  display: none;
+}
+#demoPopUp {
+  position: relative;
+  background: #fff;
+  width: 100%;
+  height: 100%;
+  max-width: 520px;
+  padding: 10px;
+  margin: 0 auto;
+  border-radius: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#demoPopUpContent {
+  margin: 0 auto;
+  max-width: 440px;
+  text-align: center;
+}
+
+#demoPopUpContent form input {
+  margin-bottom: 10px;
+}
+#demoPopUpFormText {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: #2c2c2c;
+  margin-bottom: 20px;
+}
+/* #demoPopUpContent form p {
+  margin-bottom: 20px;
+} */
+#demoPopUpBottomText {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.4);
+  margin-bottom: 20px;
+}
+#demoPopUpContent form {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 362px;
+  margin-bottom: 20px;
+}
+#demoPopUpSubmit {
+  width: 100%;
+}
+#demoPopUpTitle {
+  font-family: "Krona One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 50px;
+  color: #2c2c2c;
+  text-align: center;
+}
+#demoPopUpText {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+  color: #2c2c2c;
+  max-width: 340px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#demoPopUpSent {
+  display: none;
+  background-color: #3935d8;
+  font-family: "Open Sans";
+  padding: 20px;
+  border-radius: 10px;
+  color: #fff;
+  box-sizing: border-box;
+}
+
+#demoPopUpBottomText a {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.4);
+}
+#demoPopUpBottomText a:hover {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  color: rgba(0, 0, 0, 1);
+}
+#demoPopUpClose {
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: fit-content;
+  height: fit-content;
+}
+
+#demoPopUpContact {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+  color: #2c2c2c;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.demoPopUpContact {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+  color: #2c2c2c;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+#demoPopUpIcons {
+  display: flex;
+  gap: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  #demoPopUp {
+    border-radius: 20px;
+    height: auto;
+    padding: 40px 0;
+  }
+  #demoPopUpText {
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+  #demoPopUpContent form {
+    margin-bottom: 20px;
+  }
+  #demoPopUpBottomText {
+    margin-bottom: 40px;
+  }
+  #demoPopUpSent {
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+}
+input.error {
+  color: red !important;
+  border: 1px solid red !important;
+}
+.error::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: red;
+  opacity: 1; /* Firefox */
+}
+.popUpFormError {
+  border-radius: 15px;
+  border: 1px solid red;
+  box-shadow: 0px 0px 20px rgba(216, 53, 53, 0.1);
+  padding: 15px;
+  margin-bottom: 10px;
+  color: red;
+}
+.hidden {
+  display: none;
+}

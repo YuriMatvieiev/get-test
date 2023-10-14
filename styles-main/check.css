@@ -1,0 +1,79 @@
+.check h1 {
+  grid-column: 1/-1;
+  margin-bottom: 20px;
+}
+.check-card {
+  background: #ffffff;
+  box-shadow: var(--main-shadow);
+  border-radius: 20px;
+  padding: 30px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 25px;
+  color: var(--blue);
+}
+.check-card p {
+  width: calc(100% - 57px);
+}
+.check-pin {
+  position: relative;
+  width: 32px;
+}
+
+.check-pin p {
+  width: 32px;
+  position: absolute;
+  top: 3px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: #fff;
+  font-weight: 700;
+  font-size: 20px;
+}
+.check-btn-wrapper {
+  margin-top: 20px;
+  position: relative;
+}
+.check-btn-wrapper button {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .check-card {
+    grid-column: 1/3;
+  }
+  .check-btn-wrapper {
+    grid-row: 2/3;
+    grid-column: 3/4;
+    height: fit-content;
+    margin-top: 0;
+  }
+  .check h1 {
+    margin-bottom: 30px;
+  }
+}
+@media (min-width: 1280px) {
+  .check-card {
+    grid-column: auto;
+  }
+  .check-btn-wrapper {
+    grid-column: 1/-1;
+    grid-row: auto;
+  }
+  .check-btn-wrapper button {
+    width: fit-content;
+  }
+  .check h1 {
+    margin-bottom: 40px;
+  }
+}
+@media (min-width: 1600px) {
+  .check h1 {
+    margin-bottom: 60px;
+  }
+}
