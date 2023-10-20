@@ -143,6 +143,11 @@ button:active {
     max-width: 962px;
   }
 }
+@media (max-width: 768.98px) {
+  .hero-text {
+    font-size: 30px !important;
+  }
+}
 @media (min-width: 1280px) {
   .grid {
     grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -499,7 +504,6 @@ button:active {
 .js-snackbar__close:hover {
   background-color: #444;
 }
-
 
 .wrapper {
   min-height: 100%;

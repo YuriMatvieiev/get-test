@@ -14,20 +14,14 @@
         visibility: hidden;
       }
     </style>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Krona+One&family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
+
     <link
       rel="stylesheet"
       href="./styles/heatmap_pages/global.css"
       type="text/css"
     />
     <link rel="stylesheet" href="./styles/errors.css?0.1" type="text/css" />
-    <link rel="stylesheet" href="./styles/js-snackbar.min.css" />
-    <link rel="stylesheet" href="./styles/home/pricing.css" />
+    <link rel="stylesheet" href="./styles/home/pricing.min.css" />
     <script
       type="module"
       src="https://unpkg.com/@porscheofficial/cookie-consent-banner@2.1.0/dist/cookie-consent-banner/cookie-consent-banner.esm.js"
@@ -63,25 +57,43 @@
     </script>
     <!-- End Google Tag Manager -->
     <script src="https://www.googleoptimize.com/optimize.js?id=OPT-T9FKZ2M"></script>
-    <link href="https://getplace.io/heatmap_households" rel="canonical">
+    <link href="https://getplace.io/heatmap_households" rel="canonical" />
 
     <!-- Meta Pixel Code -->
     <script>
-      !function(f,b,e,v,n,t,s)
-      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-              n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-        n.queue=[];t=b.createElement(e);t.async=!0;
-        t.src=v;s=b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t,s)}(window, document,'script',
-              'https://connect.facebook.net/en_US/fbevents.js');
-      fbq('init', '353252573798331');
-      fbq('track', 'PageView');
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", "353252573798331");
+      fbq("track", "PageView");
     </script>
-    <noscript><img height="1" width="1" style="display:none"
-                   src="https://www.facebook.com/tr?id=353252573798331&ev=PageView&noscript=1"
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=353252573798331&ev=PageView&noscript=1"
     /></noscript>
-
   </head>
   <body>
     <!-- Google Tag Manager (noscript) -->
@@ -736,6 +748,8 @@
             width="100%"
             height="100%"
             src="https://www.youtube.com/embed/bAVqjVWqLL8"
+            loading="lazy"
+            name="video"
           >
           </iframe>
         </div>
@@ -855,7 +869,7 @@
                 <span class="pricing__slide-price-text">per month</span>
               </div>
               <a
-                href=""
+                href="#"
                 class="pricing__slide-button button-main unlimited-reports-b"
                 >Subscribe</a
               >
@@ -918,6 +932,8 @@
           width="100%"
           height="100%"
           src="https://www.youtube.com/embed/C_Ci5kdkFoM"
+          loading="lazy"
+          name="video"
         >
         </iframe>
       </div>
@@ -1018,10 +1034,8 @@
       <a href="/privacy.html" target="_blank">Privacy Policy</a>.
     </cookie-consent-banner>
     <script src="./navbar.js"></script>
-    <script src="./js-snackbar.min.js"></script>
     <script src="./errors.js"></script>
-    <script src="./footfall.js?0.13"></script>
     <script src="report.js"></script>
-    <script src="pricing.js"></script>
+    <script src="pricing.min.js"></script>
   </body>
 </html>
