@@ -29,7 +29,7 @@
     />
     <link rel="stylesheet" href="./styles/errors.css?0.1" type="text/css" />
     <link rel="stylesheet" href="./styles/js-snackbar.min.css" />
-    <link rel="stylesheet" href="./styles/home/pricing.css" />
+    <link rel="stylesheet" href="./styles/home/pricing.min.css" />
     <script
       type="module"
       src="https://unpkg.com/@porscheofficial/cookie-consent-banner@2.1.0/dist/cookie-consent-banner/cookie-consent-banner.esm.js"
@@ -65,25 +65,43 @@
     </script>
     <!-- End Google Tag Manager -->
     <script src="https://www.googleoptimize.com/optimize.js?id=OPT-T9FKZ2M"></script>
-    <link href="https://getplace.io/heatmap_fb" rel="canonical">
+    <link href="https://getplace.io/heatmap_fb" rel="canonical" />
 
     <!-- Meta Pixel Code -->
     <script>
-      !function(f,b,e,v,n,t,s)
-      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-              n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-        n.queue=[];t=b.createElement(e);t.async=!0;
-        t.src=v;s=b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t,s)}(window, document,'script',
-              'https://connect.facebook.net/en_US/fbevents.js');
-      fbq('init', '353252573798331');
-      fbq('track', 'PageView');
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", "353252573798331");
+      fbq("track", "PageView");
     </script>
-    <noscript><img height="1" width="1" style="display:none"
-                   src="https://www.facebook.com/tr?id=353252573798331&ev=PageView&noscript=1"
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=353252573798331&ev=PageView&noscript=1"
     /></noscript>
-
   </head>
   <body>
     <!-- Google Tag Manager (noscript) -->
@@ -707,7 +725,7 @@
           >Find the right location for your next site with the getplace.io</span
         >
       </div>
-      <h1 id="heroTitle">F&B Businesses Heat Map</h1>
+      <h1 id="heroTitle">F&B Insights Heat Map</h1>
       <!-- <div id="heroBottom"> -->
       <div id="heroAvailable">
         <span class="h3">
@@ -766,10 +784,11 @@
               <img src="./media/Pin.svg" alt="pin icon" class="pin" />Step 3
             </h3>
             <p>
-              Evaluate market saturation and competition based on the insights
-              derived from the food and beverage businesses density heat map,
-              and identify potential opportunities for new ventures,
-              partnerships, or unique positioning in less crowded areas.
+              Assess market saturation and competition by analyzing the data
+              gleaned from the food and beverage businesses density heat map.
+              Utilize these F&B insights to pinpoint promising prospects for
+              launching new ventures, forming partnerships, or establishing a
+              distinctive presence in less congested regions.
             </p>
           </div>
         </div>
@@ -957,6 +976,67 @@
         >
       </div>
     </section>
+    <section class="faq">
+      <div class="faq__container">
+        <h2 class="faq__title">Frequently Asked Questions</h2>
+        <!-- <div class="faq__subtitle">
+          Find answers to questions about location reports
+        </div> -->
+        <div data-spollers data-one-spoller class="spollers">
+          <details class="spollers__item">
+            <summary class="spollers__title">
+              <h3>
+                What is F&B Data Analytics, and How Does It Benefit the Food and
+                Beverage Industry?
+              </h3>
+            </summary>
+            <div class="spollers__body">
+              F&B data analytics refers to the process of collecting, analyzing,
+              and interpreting data specific to the food and beverage industry.
+              This valuable tool helps businesses gain insights into customer
+              preferences, operational efficiency, and market trends. By
+              harnessing F&B data analytics, companies can make informed
+              decisions, optimize their offerings, and improve overall business
+              performance.
+            </div>
+          </details>
+          <details class="spollers__item">
+            <summary class="spollers__title">
+              <h3>
+                How Can I Access the F&B Heat Map, and What Information Does It
+                Provide?
+              </h3>
+            </summary>
+            <div class="spollers__body">
+              An F&B map is a specialized map that displays geospatial data
+              related to food and beverage establishments. It offers valuable
+              information such as the locations of restaurants, cafes, bars, and
+              other F&B businesses. F&B maps can also provide additional details
+              like customer reviews, ratings, and even foot traffic data,
+              enabling businesses to make strategic decisions and consumers to
+              discover new dining options.
+            </div>
+          </details>
+          <details class="spollers__item">
+            <summary class="spollers__title">
+              <h3>
+                What Are the Key Applications of Data Analytics in the F&B
+                Industry?
+              </h3>
+            </summary>
+            <div class="spollers__body">
+              Data analytics plays a pivotal role in the food and beverage
+              industry. It helps businesses in menu optimization, supply chain
+              management, inventory control, and customer engagement.
+              Additionally, data analytics assists in identifying market trends,
+              predicting consumer preferences, and enhancing marketing
+              strategies. Overall, it empowers F&B businesses to stay
+              competitive and meet the evolving demands of their customers.
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
     <footer class="footer">
       <div class="footer-top">
         <div class="footer-left">
@@ -1026,6 +1106,6 @@
     <script src="./errors.js"></script>
     <script src="./footfall.js?0.13"></script>
     <script src="report.js"></script>
-    <script src="pricing.js"></script>
+    <script src="pricing.min.js"></script>
   </body>
 </html>
