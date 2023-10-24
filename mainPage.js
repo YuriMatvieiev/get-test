@@ -411,17 +411,17 @@ var clientsSwiper = new Swiper(".clientsSwiper", {
 
 const initSection = function (sectionId, buttonClass, plan) {
   let section = document.getElementById(sectionId);
-  let body = document.getElementsByTagName('body')[0];
-  let buttons = document.getElementsByClassName(buttonClass)
+  let body = document.getElementsByTagName("body")[0];
+  let buttons = document.getElementsByClassName(buttonClass);
 
-  if (!section || !buttons ) {
+  if (!section || !buttons) {
     return;
   }
 
   let backButtons = section.getElementsByClassName("confirm__form-back-button");
 
   for (let b of backButtons) {
-    b.addEventListener('click', (e) => {
+    b.addEventListener("click", (e) => {
       e.preventDefault();
 
       body.style.overflowY = "scroll";
@@ -430,7 +430,7 @@ const initSection = function (sectionId, buttonClass, plan) {
   }
 
   for (let b of buttons) {
-    b.addEventListener('click', (e) => {
+    b.addEventListener("click", (e) => {
       e.preventDefault();
 
       selectedPlan = plan;
@@ -440,7 +440,10 @@ const initSection = function (sectionId, buttonClass, plan) {
   }
 
   let confirmButtons = section.getElementsByClassName("confirm__form-button");
-  let sErrs = new Errors([sectionId+"-name", sectionId+"-email", sectionId+"-password"], sectionId+"-errs")
+  let sErrs = new Errors(
+    [sectionId + "-name", sectionId + "-email", sectionId + "-password"],
+    sectionId + "-errs"
+  );
 
   for (let b of confirmButtons) {
     b.addEventListener("click", (e) => {
@@ -449,10 +452,10 @@ const initSection = function (sectionId, buttonClass, plan) {
       sErrs.Clear();
       sErrs.HideError();
 
-      let full_name = document.getElementById(sectionId+"-name");
+      let full_name = document.getElementById(sectionId + "-name");
       let company = "company";
-      let password = document.getElementById(sectionId+"-password");
-      let email = document.getElementById(sectionId+"-email");
+      let password = document.getElementById(sectionId + "-password");
+      let email = document.getElementById(sectionId + "-email");
 
       let errors = [];
       if (!full_name || full_name.value.length < 2) {
@@ -491,11 +494,11 @@ const initSection = function (sectionId, buttonClass, plan) {
                   } else if (selectedPlan === planFullSub) {
                     // heatmap + reports
                     window.location.href =
-                      "https://buy.stripe.com/9AQ3e5fIBbfF4c828u?client_reference_id=" +
+                      "https://buy.stripe.com/aEU6qhaoh83tgYU6p2?client_reference_id=" +
                       resp.payment_ses;
                   } else if (selectedPlan === planUnlimitedReports) {
                     window.location.href =
-                      "https://buy.stripe.com/00g15X53X1F59ws5kH?client_reference_id=" +
+                      "https://buy.stripe.com/fZeeWN9kddnNeQM7t5?client_reference_id=" +
                       resp.payment_ses;
                   }
                   // https://app.getplace.io/login/stripe?sess={CHECKOUT_SESSION_ID}
@@ -522,8 +525,12 @@ const initSection = function (sectionId, buttonClass, plan) {
       }
     });
   }
-}
+};
 
 //sections
 initSection("full-sub-section", "full-sub-b", planFullSub);
-initSection("unlimited-reports-section", "unlimited-reports-b", planUnlimitedReports);
+initSection(
+  "unlimited-reports-section",
+  "unlimited-reports-b",
+  planUnlimitedReports
+);

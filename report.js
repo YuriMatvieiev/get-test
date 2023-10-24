@@ -96,11 +96,11 @@ const initSection = function (sectionId, buttonClass, plan) {
                   } else if (selectedPlan === planFullSub) {
                     // heatmap + reports
                     window.location.href =
-                      "https://buy.stripe.com/9AQ3e5fIBbfF4c828u?client_reference_id=" +
+                      "https://buy.stripe.com/aEU6qhaoh83tgYU6p2?client_reference_id=" +
                       resp.payment_ses;
                   } else if (selectedPlan === planUnlimitedReports) {
                     window.location.href =
-                      "https://buy.stripe.com/00g15X53X1F59ws5kH?client_reference_id=" +
+                      "https://buy.stripe.com/fZeeWN9kddnNeQM7t5?client_reference_id=" +
                       resp.payment_ses;
                   }
                   // https://app.getplace.io/login/stripe?sess={CHECKOUT_SESSION_ID}
@@ -283,7 +283,7 @@ if (!!geocoderForm) {
               let resp = JSON.parse(xhttp.response);
               if (resp?.status === "ok") {
                 window.location.href =
-                  "https://buy.stripe.com/cN2bKBcwpabBgYUcN7?client_reference_id=" +
+                  "https://buy.stripe.com/eVa7ulgMF4RhbEAdRs?client_reference_id=" +
                   resp.id;
               }
             } catch (e) {}
